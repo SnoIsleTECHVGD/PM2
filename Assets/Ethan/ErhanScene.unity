@@ -242,8 +242,10 @@ MonoBehaviour:
   MoveDown: 115
   MoveLeft: 97
   MoveRight: 100
-  Dash: 32
+  dash: 32
   speed: 4
+  rb: {fileID: 0}
+  bc: {fileID: 0}
   dashSpeed: 10
   dashLength: 10
   dashCooldown: 1
@@ -261,7 +263,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 4
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0

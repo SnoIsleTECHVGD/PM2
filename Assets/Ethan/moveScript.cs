@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class moveScript : MonoBehaviour
-{
+{   
+    public Rigidbody2D rb;
+    public BoxCollider2D bc;
     public KeyCode MoveUp;
     public KeyCode MoveDown;
     public KeyCode MoveLeft;
     public KeyCode MoveRight;
-    public KeyCode Dash;
+    public KeyCode dash;
     public float speed;
-    public Rigidbody2D rb;
-    public BoxCollider2D bc;
+   
 
     private float activeMoveSpeed;
     public float dashSpeed;
@@ -48,12 +49,15 @@ public class moveScript : MonoBehaviour
             rb.velocity = Vector2.right * speed;
         }
         //Dash script
-        if (Input.GetKeyDown(Dash))
+
+        //PROBLEM: Vector2.(direction) * speed makes it ONLY use Vector * speed, instead of switching it to dash speed
+        //POTENTIAL SOLUTION: Make the dash script temporarily change the actual speed instead of changing the used variable.
+        if (Input.GetKeyDown(dash))
         {
 
             if (dashCoolCounter <=0 && dashCounter <= 0)
             {
-                activeMoveSpeed = dashSpeed;
+                speed = dashSpeed;
                 dashCounter = dashLength;
 
             }
@@ -65,7 +69,7 @@ public class moveScript : MonoBehaviour
 
             if(dashCounter <= 0)
             {
-                activeMoveSpeed = speed;
+                speed = 4;
                 dashCoolCounter = dashCooldown;
             }
         }
