@@ -10,31 +10,70 @@ public class moveScript : MonoBehaviour
     public KeyCode MoveRight;
     public KeyCode Dash;
     public float speed;
+    public Rigidbody2D rb;
+    public BoxCollider2D bc;
+
+    private float activeMoveSpeed;
+    public float dashSpeed;
+
+    public float dashLength = .5f, dashCooldown = 1f;
+
+    private float dashCounter;
+    private float dashCoolCounter;
     // Start is called before the first frame update
-    
+    void Start()
+    {
+        activeMoveSpeed = speed;
+        rb = GetComponent<Rigidbody2D>();
+        bc = GetComponent<BoxCollider2D>();
+    }
     // Update is called once per frame
     void Update()
     {
         //Movement script
         if (Input.GetKey(MoveUp))
         {
-            GetComponent<Rigidbody2D>().velocity = Vector2.up * speed;
+            rb.velocity = Vector2.up * speed;
         }
         if (Input.GetKey(MoveDown))
         {
-            GetComponent<Rigidbody2D>().velocity = Vector2.down * speed;
+            rb.velocity = Vector2.down * speed;
         }
         if (Input.GetKey(MoveLeft))
         {
-            GetComponent<Rigidbody2D>().velocity = Vector2.left * speed;
+            rb.velocity = Vector2.left * speed;
         }
         if (Input.GetKey(MoveRight))
         {
-            GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
+            rb.velocity = Vector2.right * speed;
         }
         //Dash script
-        //if (Input.GetKeyDown(Dash))
-      
+        if (Input.GetKeyDown(Dash))
+        {
+
+            if (dashCoolCounter <=0 && dashCounter <= 0)
+            {
+                activeMoveSpeed = dashSpeed;
+                dashCounter = dashLength;
+
+            }
+        }
+
+        if (dashCounter > 0)
+        {
+            dashCounter -= Time.deltaTime;
+
+            if(dashCounter <= 0)
+            {
+                activeMoveSpeed = speed;
+                dashCoolCounter = dashCooldown;
+            }
+        }
+        
+        if (dashCoolCounter > 0)
+        {
+            dashCoolCounter -= Time.deltaTime;
+        }
 
     }
 }
