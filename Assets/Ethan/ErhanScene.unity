@@ -1192,7 +1192,6 @@ GameObject:
   - component: {fileID: 2097568058}
   - component: {fileID: 2097568057}
   - component: {fileID: 2097568056}
-  - component: {fileID: 2097568061}
   m_Layer: 0
   m_Name: Player(2)
   m_TagString: Untagged
@@ -1209,16 +1208,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2097568055}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc9c94fbe475f146aa5e57a1ed985de, type: 3}
+  m_Script: {fileID: 11500000, guid: 48e917e4dd532e640938fb6de119f7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 2097568057}
-  bc: {fileID: 2097568058}
-  MoveUp: 119
-  MoveDown: 115
-  MoveLeft: 97
-  MoveRight: 100
-  speed: 4
+  moveSpeed: 5
+  rb2d: {fileID: 2097568057}
+  dashSpeed: 20
+  dashLength: 0.2
+  dashCooldown: 1
 --- !u!50 &2097568057
 Rigidbody2D:
   serializedVersion: 4
@@ -1331,20 +1328,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2097568061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2097568055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64c34cdf32de98e4caac7825aa600ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  msPaint: {fileID: 2097568056}
-  dash: 32
-  dashCounter: 0
-  dashDuration: 1
-  dashSpeed: 20
