@@ -216,9 +216,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1227075941}
   - component: {fileID: 1227075940}
-  - component: {fileID: 1227075939}
   - component: {fileID: 1227075942}
-  m_Layer: 6
+  - component: {fileID: 1227075939}
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -234,18 +234,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1227075938}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc9c94fbe475f146aa5e57a1ed985de, type: 3}
+  m_Script: {fileID: 11500000, guid: 48e917e4dd532e640938fb6de119f7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  bc: {fileID: 0}
-  MoveUp: 273
-  MoveDown: 274
-  MoveLeft: 276
-  MoveRight: 275
-  dash: 0
-  speed: 2
-  dashSpeed: 0
+  moveSpeed: 5
+  rb2d: {fileID: 1227075942}
+  dashSpeed: 4
   dashLength: 0.5
   dashCooldown: 1
 --- !u!212 &1227075940
@@ -307,7 +301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227075938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.98, y: -0.7491075, z: 0}
+  m_LocalPosition: {x: -8.61, y: 4.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -344,8 +338,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1613198446}
   - component: {fileID: 1613198445}
-  - component: {fileID: 1613198444}
   - component: {fileID: 1613198447}
+  - component: {fileID: 1613198444}
+  - component: {fileID: 1613198448}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Untagged
@@ -362,17 +357,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1613198443}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64ad3ef7c01bdd14d9d01e3500e3358a, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ddee93ef0547824c87a16c306daa527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
-  checkRadius: 5
-  attackRadius: 2
-  shouldRotate: 1
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 64
-  dir: {x: 0, y: 0, z: 0}
+  player: {fileID: 1227075938}
+  speed: 5
+  distanceBetween: 17.31
 --- !u!212 &1613198445
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -459,3 +449,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1613198448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613198443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03081141a667d0141a27781b6cf80703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  range: 10
+  maxDistance: 10
