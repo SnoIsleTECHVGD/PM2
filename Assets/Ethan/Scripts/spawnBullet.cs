@@ -8,7 +8,7 @@ public class spawnBullet : MonoBehaviour
     public Vector3 mousePos;
     public GameObject theCamera;
     public Vector3 HELPPP;
-    public int bulletSpeed;
+    public int bulletSpeed = 5;
     // Update is called once per frame
     void Update()
     {
