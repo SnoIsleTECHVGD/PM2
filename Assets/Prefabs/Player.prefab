@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 2282492239868937293, guid: 4e9631c4041193648b4b3c8d3baf77dd, type: 3}
   mousePos: {x: 0, y: 0, z: 0}
-  theCamera: {fileID: 0}
+  theCamera: {fileID: 9080017020323986733, guid: 275ef5f693c0c134e8fa8171b4a46e84, type: 3}
   HELPPP: {x: 0, y: 0, z: 0}
   bulletSpeed: 5
 --- !u!50 &2231115362405326774
