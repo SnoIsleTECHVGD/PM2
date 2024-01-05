@@ -1,127 +1,127 @@
 fileFormatVersion: 2
-guid: 5298e72d2f9a3f64eb975470de411bb9
+guid: ff95bf805a48a4c40adb2a185b1cd3ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6414163119847433349
-    second: Roadside Tilemap REDO_0
+      213: -727171967447212073
+    second: Road_Tiles_0
   - first:
-      213: 3982959686767461649
-    second: Roadside Tilemap REDO_1
+      213: -3157240902879804084
+    second: Road_Tiles_1
   - first:
-      213: 6781633872001215419
-    second: Roadside Tilemap REDO_2
+      213: -2437375911001075057
+    second: Road_Tiles_2
   - first:
-      213: 988839086448005007
-    second: Roadside Tilemap REDO_3
+      213: 1539658818985782188
+    second: Road_Tiles_3
   - first:
-      213: 5709357424016258386
-    second: Roadside Tilemap REDO_4
+      213: 3307224536978445411
+    second: Road_Tiles_4
   - first:
-      213: -7032438844768590512
-    second: Roadside Tilemap REDO_5
+      213: -2339968787709004055
+    second: Road_Tiles_5
   - first:
-      213: 4296126186524685369
-    second: Roadside Tilemap REDO_6
+      213: -741519882265315133
+    second: Road_Tiles_6
   - first:
-      213: 4030875663546471827
-    second: Roadside Tilemap REDO_7
+      213: 3793957431074438808
+    second: Road_Tiles_7
   - first:
-      213: 1028895511406069508
-    second: Roadside Tilemap REDO_8
+      213: -3314571180124887487
+    second: Road_Tiles_8
   - first:
-      213: -6985311132749050575
-    second: Roadside Tilemap REDO_9
+      213: 5187983388583307477
+    second: Road_Tiles_9
   - first:
-      213: 7057364936348026012
-    second: Roadside Tilemap REDO_10
+      213: 5527268154895078338
+    second: Road_Tiles_10
   - first:
-      213: 8581631143017843044
-    second: Roadside Tilemap REDO_11
+      213: -2136262074106158135
+    second: Road_Tiles_11
   - first:
-      213: -9089308866169776326
-    second: Roadside Tilemap REDO_12
+      213: 4918783452338477992
+    second: Road_Tiles_12
   - first:
-      213: 2377705781651701003
-    second: Roadside Tilemap REDO_13
+      213: -7297808474706320040
+    second: Road_Tiles_13
   - first:
-      213: -4364068739092770924
-    second: Roadside Tilemap REDO_14
+      213: 2438197253984577814
+    second: Road_Tiles_14
   - first:
-      213: -209417708988769648
-    second: Roadside Tilemap REDO_15
+      213: -4279353618098311519
+    second: Road_Tiles_15
   - first:
-      213: 5910723826149046038
-    second: Roadside Tilemap REDO_16
+      213: 8680635702574109856
+    second: Road_Tiles_16
   - first:
-      213: -4895339243080137367
-    second: Roadside Tilemap REDO_17
+      213: 404565713304069009
+    second: Road_Tiles_17
   - first:
-      213: 8499864353258901246
-    second: Roadside Tilemap REDO_18
+      213: 3781982253926361496
+    second: Road_Tiles_18
   - first:
-      213: 6094587936738559444
-    second: Roadside Tilemap REDO_19
+      213: 7230438574161641454
+    second: Road_Tiles_19
   - first:
-      213: 3573970393928543922
-    second: Roadside Tilemap REDO_20
+      213: -1702757193210667012
+    second: Road_Tiles_20
   - first:
-      213: -105920938195025417
-    second: Roadside Tilemap REDO_21
+      213: -8500772747370056992
+    second: Road_Tiles_21
   - first:
-      213: -3400639306104905186
-    second: Roadside Tilemap REDO_22
+      213: -4423203635440888216
+    second: Road_Tiles_22
   - first:
-      213: -4652563470227091753
-    second: Roadside Tilemap REDO_23
+      213: -2304963935412766223
+    second: Road_Tiles_23
   - first:
-      213: -5343204823939665427
-    second: Roadside Tilemap REDO_24
+      213: -153296166801006067
+    second: Road_Tiles_24
   - first:
-      213: -151343926346399697
-    second: Roadside Tilemap REDO_25
+      213: 509324715871873101
+    second: Road_Tiles_25
   - first:
-      213: 7280729650812875330
-    second: Roadside Tilemap REDO_26
+      213: -2408242226489449476
+    second: Road_Tiles_26
   - first:
-      213: -1609246581117438116
-    second: Roadside Tilemap REDO_27
+      213: -2586897544907763229
+    second: Road_Tiles_27
   - first:
-      213: 889243176297942401
-    second: Roadside Tilemap REDO_28
+      213: 1892255374624325336
+    second: Road_Tiles_28
   - first:
-      213: 1961980195476241162
-    second: Roadside Tilemap REDO_29
+      213: -9097382820928719477
+    second: Road_Tiles_29
   - first:
-      213: 1407198991506976240
-    second: Roadside Tilemap REDO_30
+      213: -4094404049382185894
+    second: Road_Tiles_30
   - first:
-      213: 8073421099242898184
-    second: Roadside Tilemap REDO_31
+      213: 1693516859191585437
+    second: Road_Tiles_31
   - first:
-      213: -1871903901270721819
-    second: Roadside Tilemap REDO_32
+      213: -6262646426889982794
+    second: Road_Tiles_32
   - first:
-      213: -7652109477049594942
-    second: Roadside Tilemap REDO_33
+      213: -8789483381382023688
+    second: Road_Tiles_33
   - first:
-      213: 9020834901861120367
-    second: Roadside Tilemap REDO_34
+      213: -4900189975794188756
+    second: Road_Tiles_34
   - first:
-      213: -6623142416163012212
-    second: Roadside Tilemap REDO_35
+      213: -9177406605511382172
+    second: Road_Tiles_35
   - first:
-      213: -4500544445391901791
-    second: Roadside Tilemap REDO_36
+      213: 3443078409327751880
+    second: Road_Tiles_36
   - first:
-      213: -6407302460911052164
-    second: Roadside Tilemap REDO_37
+      213: 2061850242593805196
+    second: Road_Tiles_37
   - first:
-      213: -6067484636611393210
-    second: Roadside Tilemap REDO_38
+      213: 2307856073557268271
+    second: Road_Tiles_38
   - first:
-      213: 4576667758753677998
-    second: Roadside Tilemap REDO_39
+      213: 8186548295585573916
+    second: Road_Tiles_39
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -235,7 +235,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_0
+      name: Road_Tiles_0
       rect:
         serializedVersion: 2
         x: 0
@@ -249,14 +249,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7b151e40a05cf6a0800000000000000
-      internalID: -6414163119847433349
+      spriteID: 7dfdfa5c2f098e5f0800000000000000
+      internalID: -727171967447212073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_1
+      name: Road_Tiles_1
       rect:
         serializedVersion: 2
         x: 128
@@ -270,14 +270,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 115c9748bb0564730800000000000000
-      internalID: 3982959686767461649
+      spriteID: c450489602a3f24d0800000000000000
+      internalID: -3157240902879804084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_2
+      name: Road_Tiles_2
       rect:
         serializedVersion: 2
         x: 256
@@ -291,14 +291,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbba36173143d1e50800000000000000
-      internalID: 6781633872001215419
+      spriteID: f82dfa0d583bc2ed0800000000000000
+      internalID: -2437375911001075057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_3
+      name: Road_Tiles_3
       rect:
         serializedVersion: 2
         x: 384
@@ -312,14 +312,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8f41c7f8ef09bd00800000000000000
-      internalID: 988839086448005007
+      spriteID: cabe1f4d987fd5510800000000000000
+      internalID: 1539658818985782188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_4
+      name: Road_Tiles_4
       rect:
         serializedVersion: 2
         x: 512
@@ -333,14 +333,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2557a32e356bb3f40800000000000000
-      internalID: 5709357424016258386
+      spriteID: 3645e07a13f95ed20800000000000000
+      internalID: 3307224536978445411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_5
+      name: Road_Tiles_5
       rect:
         serializedVersion: 2
         x: 0
@@ -354,14 +354,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 055e8e05122c76e90800000000000000
-      internalID: -7032438844768590512
+      spriteID: 9e67a1709c2c68fd0800000000000000
+      internalID: -2339968787709004055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_6
+      name: Road_Tiles_6
       rect:
         serializedVersion: 2
         x: 128
@@ -375,14 +375,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 934be0a3108ee9b30800000000000000
-      internalID: 4296126186524685369
+      spriteID: 3c8bfa7889795b5f0800000000000000
+      internalID: -741519882265315133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_7
+      name: Road_Tiles_7
       rect:
         serializedVersion: 2
         x: 256
@@ -396,14 +396,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 395547b3f0c80f730800000000000000
-      internalID: 4030875663546471827
+      spriteID: 89e352cae28d6a430800000000000000
+      internalID: 3793957431074438808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_8
+      name: Road_Tiles_8
       rect:
         serializedVersion: 2
         x: 384
@@ -417,14 +417,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4074a5c240f574e00800000000000000
-      internalID: 1028895511406069508
+      spriteID: 146a8e1b2174002d0800000000000000
+      internalID: -3314571180124887487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_9
+      name: Road_Tiles_9
       rect:
         serializedVersion: 2
         x: 512
@@ -438,14 +438,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13d49e6d8803f0f90800000000000000
-      internalID: -6985311132749050575
+      spriteID: 5d8a221a76b6ff740800000000000000
+      internalID: 5187983388583307477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_10
+      name: Road_Tiles_10
       rect:
         serializedVersion: 2
         x: 0
@@ -459,14 +459,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c944251a40cc0f160800000000000000
-      internalID: 7057364936348026012
+      spriteID: 2c399d62a1dc4bc40800000000000000
+      internalID: 5527268154895078338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_11
+      name: Road_Tiles_11
       rect:
         serializedVersion: 2
         x: 128
@@ -480,14 +480,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4690201ae04181770800000000000000
-      internalID: 8581631143017843044
+      spriteID: 9c363c546f87a52e0800000000000000
+      internalID: -2136262074106158135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_12
+      name: Road_Tiles_12
       rect:
         serializedVersion: 2
         x: 256
@@ -501,14 +501,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3754225eb94cd180800000000000000
-      internalID: -9089308866169776326
+      spriteID: 8ab54b33d77034440800000000000000
+      internalID: 4918783452338477992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_13
+      name: Road_Tiles_13
       rect:
         serializedVersion: 2
         x: 384
@@ -522,14 +522,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0dfdbf8fce4ff020800000000000000
-      internalID: 2377705781651701003
+      spriteID: 8556b429bd9f8ba90800000000000000
+      internalID: -7297808474706320040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_14
+      name: Road_Tiles_14
       rect:
         serializedVersion: 2
         x: 512
@@ -543,14 +543,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49f0df68a96bf63c0800000000000000
-      internalID: -4364068739092770924
+      spriteID: 61965100c7736d120800000000000000
+      internalID: 2438197253984577814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_15
+      name: Road_Tiles_15
       rect:
         serializedVersion: 2
         x: 0
@@ -564,14 +564,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09a5c0604bff71df0800000000000000
-      internalID: -209417708988769648
+      spriteID: 1aea7fcae8eac94c0800000000000000
+      internalID: -4279353618098311519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_16
+      name: Road_Tiles_16
       rect:
         serializedVersion: 2
         x: 128
@@ -585,14 +585,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6173d07e00c170250800000000000000
-      internalID: 5910723826149046038
+      spriteID: 0a4d084fd20d77870800000000000000
+      internalID: 8680635702574109856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_17
+      name: Road_Tiles_17
       rect:
         serializedVersion: 2
         x: 256
@@ -606,14 +606,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 965cd2125e2401cb0800000000000000
-      internalID: -4895339243080137367
+      spriteID: 193aacd6f5e4d9500800000000000000
+      internalID: 404565713304069009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_18
+      name: Road_Tiles_18
       rect:
         serializedVersion: 2
         x: 384
@@ -627,14 +627,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efe8007589595f570800000000000000
-      internalID: 8499864353258901246
+      spriteID: 899ac1872dc4c7430800000000000000
+      internalID: 3781982253926361496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_19
+      name: Road_Tiles_19
       rect:
         serializedVersion: 2
         x: 512
@@ -648,14 +648,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d5cead1073549450800000000000000
-      internalID: 6094587936738559444
+      spriteID: eefbf2f139da75460800000000000000
+      internalID: 7230438574161641454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_20
+      name: Road_Tiles_20
       rect:
         serializedVersion: 2
         x: 0
@@ -669,14 +669,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2beafd7332b499130800000000000000
-      internalID: 3573970393928543922
+      spriteID: cffdfe7ba579e58e0800000000000000
+      internalID: -1702757193210667012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_21
+      name: Road_Tiles_21
       rect:
         serializedVersion: 2
         x: 128
@@ -690,14 +690,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f10c98c771b78ef0800000000000000
-      internalID: -105920938195025417
+      spriteID: 0e2bfaca930370a80800000000000000
+      internalID: -8500772747370056992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_22
+      name: Road_Tiles_22
       rect:
         serializedVersion: 2
         x: 256
@@ -711,14 +711,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e12e26681908ec0d0800000000000000
-      internalID: -3400639306104905186
+      spriteID: 866545c8abf9d92c0800000000000000
+      internalID: -4423203635440888216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_23
+      name: Road_Tiles_23
       rect:
         serializedVersion: 2
         x: 384
@@ -732,14 +732,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dec7269c26ce6fb0800000000000000
-      internalID: -4652563470227091753
+      spriteID: 1f9b2a1538f1300e0800000000000000
+      internalID: -2304963935412766223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_24
+      name: Road_Tiles_24
       rect:
         serializedVersion: 2
         x: 512
@@ -753,14 +753,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de13ceaa58f19d5b0800000000000000
-      internalID: -5343204823939665427
+      spriteID: d02a560d2f16fddf0800000000000000
+      internalID: -153296166801006067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_25
+      name: Road_Tiles_25
       rect:
         serializedVersion: 2
         x: 0
@@ -774,14 +774,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f20c537308156edf0800000000000000
-      internalID: -151343926346399697
+      spriteID: d48aedc612c711700800000000000000
+      internalID: 509324715871873101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_26
+      name: Road_Tiles_26
       rect:
         serializedVersion: 2
         x: 128
@@ -795,14 +795,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 242fa5eda095a0560800000000000000
-      internalID: 7280729650812875330
+      spriteID: cf320055474349ed0800000000000000
+      internalID: -2408242226489449476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_27
+      name: Road_Tiles_27
       rect:
         serializedVersion: 2
         x: 256
@@ -816,14 +816,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c57bb78b2cecaa9e0800000000000000
-      internalID: -1609246581117438116
+      spriteID: 3e1517d836e791cd0800000000000000
+      internalID: -2586897544907763229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_28
+      name: Road_Tiles_28
       rect:
         serializedVersion: 2
         x: 384
@@ -837,14 +837,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18dcd2a15f9375c00800000000000000
-      internalID: 889243176297942401
+      spriteID: 8de7ec4dc34a24a10800000000000000
+      internalID: 1892255374624325336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_29
+      name: Road_Tiles_29
       rect:
         serializedVersion: 2
         x: 512
@@ -858,14 +858,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0b76bfb79a5a3b10800000000000000
-      internalID: 1961980195476241162
+      spriteID: b857dcc368a9fb180800000000000000
+      internalID: -9097382820928719477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_30
+      name: Road_Tiles_30
       rect:
         serializedVersion: 2
         x: 0
@@ -879,14 +879,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fdaf01f600678310800000000000000
-      internalID: 1407198991506976240
+      spriteID: a5467adc531cd27c0800000000000000
+      internalID: -4094404049382185894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_31
+      name: Road_Tiles_31
       rect:
         serializedVersion: 2
         x: 128
@@ -900,14 +900,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 803448607bd8a0070800000000000000
-      internalID: 8073421099242898184
+      spriteID: d9aef3d5c94908710800000000000000
+      internalID: 1693516859191585437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_32
+      name: Road_Tiles_32
       rect:
         serializedVersion: 2
         x: 256
@@ -921,14 +921,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ea371fc159a506e0800000000000000
-      internalID: -1871903901270721819
+      spriteID: 6bc6a53714c9619a0800000000000000
+      internalID: -6262646426889982794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_33
+      name: Road_Tiles_33
       rect:
         serializedVersion: 2
         x: 384
@@ -942,14 +942,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cb0f0629fe3ec590800000000000000
-      internalID: -7652109477049594942
+      spriteID: 8f5768dee6b750680800000000000000
+      internalID: -8789483381382023688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_34
+      name: Road_Tiles_34
       rect:
         serializedVersion: 2
         x: 512
@@ -963,14 +963,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f69b0ee7c81703d70800000000000000
-      internalID: 9020834901861120367
+      spriteID: c2e7bd8ed270ffbb0800000000000000
+      internalID: -4900189975794188756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_35
+      name: Road_Tiles_35
       rect:
         serializedVersion: 2
         x: 0
@@ -984,14 +984,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8108cb301fd514a0800000000000000
-      internalID: -6623142416163012212
+      spriteID: 46bab27f05d43a080800000000000000
+      internalID: -9177406605511382172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_36
+      name: Road_Tiles_36
       rect:
         serializedVersion: 2
         x: 128
@@ -1005,14 +1005,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1abee8cfbaada81c0800000000000000
-      internalID: -4500544445391901791
+      spriteID: 8c23cc1329548cf20800000000000000
+      internalID: 3443078409327751880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_37
+      name: Road_Tiles_37
       rect:
         serializedVersion: 2
         x: 256
@@ -1026,14 +1026,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7a19e0fb50b417a0800000000000000
-      internalID: -6407302460911052164
+      spriteID: c835bd91fd92d9c10800000000000000
+      internalID: 2061850242593805196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_38
+      name: Road_Tiles_38
       rect:
         serializedVersion: 2
         x: 384
@@ -1047,14 +1047,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64943a2bed6fbcba0800000000000000
-      internalID: -6067484636611393210
+      spriteID: f27db111fd6270020800000000000000
+      internalID: 2307856073557268271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roadside Tilemap REDO_39
+      name: Road_Tiles_39
       rect:
         serializedVersion: 2
         x: 512
@@ -1068,8 +1068,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea20f7f0417938f30800000000000000
-      internalID: 4576667758753677998
+      spriteID: c1c25f6fc467c9170800000000000000
+      internalID: 8186548295585573916
       vertices: []
       indices: 
       edges: []
