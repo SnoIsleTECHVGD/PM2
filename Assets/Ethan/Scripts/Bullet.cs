@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public string avoid;
-    private void OnTriggerEnter(Collider other)
+    public float damage;
+    //public Stats stats;
+    public void OnCollisionEnter(Collision collision)
     {
         /*
-        Stats hitstats = other.gameObject.GetComponent<Stats>();
+        Enemy other = collision.gameObject.GetComponent<Enemy>();
+        if (other)
+        {
+            // HERE we know that the other object we collided with is an enemy
+            print("Has collided!!");
+            other.stats.hitPoints = -damage;
+        }
 
-        if (hitstats != null && hitstats.hasHealth == true && !other.CompareTag(avoid) && !other.CompareTag("Bullet"))
-        {
-            hitstats.health -= 10 - hitstats.defense;
-            if (hitstats.health <= 0)
-            {
-                Destroy(hitstats.gameObject);
-            }
-        }
-        if (other.CompareTag("Player") == false)
-        {
-            Destroy(gameObject);
-        }
-        */
+          print("Has collided!!");
+
+          stats.hitPoints =- damage; */
+
+
+
     }
 }

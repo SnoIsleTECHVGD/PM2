@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2282492239868937292}
   - component: {fileID: 6746330269280839763}
   - component: {fileID: 4647944286124399677}
+  - component: {fileID: 5094709969744834087}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -97,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0ff4ed15479bb742894576e208fe2ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  avoid: 
+  damage: 1
 --- !u!50 &6746330269280839763
 Rigidbody2D:
   serializedVersion: 4
@@ -129,7 +130,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -145,3 +146,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5094709969744834087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2282492239868937293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdd44f1df3d4b54a8e0d96ba0aa9422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  attack: 1

@@ -4,14 +4,7 @@ using UnityEngine;
 
 public class Stats : MonoBehaviour
 {
-
-    public float PlayerHP;
+    public int health;
+    public int attack;
     
-    // Start is called before the first frame update
-    private void Update()
-    {
-
-    }
-
-
 }

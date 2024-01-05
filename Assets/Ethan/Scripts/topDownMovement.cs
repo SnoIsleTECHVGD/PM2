@@ -25,6 +25,7 @@ public class topDownMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
 
