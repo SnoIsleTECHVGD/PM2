@@ -7,13 +7,14 @@ public class Stats : MonoBehaviour
     public int health;
     public int attack;
 
+    Scraps scraps;
 
     public void Update()
     {
         if (health <= 0)
         {
-            gameObject.SetActive(false);  
-
+            gameObject.SetActive(false);
+            scraps.IncrementScrapCount();
         }
     }
 }

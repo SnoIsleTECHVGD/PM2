@@ -7,7 +7,7 @@ public class Wand : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float range;
     [SerializeField] float maxDistance;
-    Vector2 wayPoint;
+    Vector3 wayPoint;
 
     private void Start()
     {
@@ -17,7 +17,7 @@ public class Wand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, wayPoint, speed * Time.deltaTime);
+        GetComponent<Rigidbody2D>().velocity = (this.transform.position - wayPoint) * speed;
         if (Vector2.Distance(transform.position, wayPoint) < range)
         {
             SetNewDestination();
