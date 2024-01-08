@@ -6,6 +6,7 @@ public class TutFollow : MonoBehaviour
 {
     public GameObject player;
     public float speed;
+    public Vector2 offset;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,7 @@ public class TutFollow : MonoBehaviour
     {
         Vector2 direction = player.transform.position - transform.position;
 
-        transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position + (Vector3)offset , speed * Time.deltaTime);
 
         if (Input.GetKey(KeyCode.W))
         {
