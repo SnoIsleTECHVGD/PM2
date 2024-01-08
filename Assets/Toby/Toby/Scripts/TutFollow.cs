@@ -19,6 +19,23 @@ public class TutFollow : MonoBehaviour
         Vector2 direction = player.transform.position - transform.position;
 
         transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            GetComponent<Animator>().SetInteger("WalkDirection", 1);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            GetComponent<Animator>().SetInteger("WalkDirection", 2);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            GetComponent<Animator>().SetInteger("WalkDirection", 3);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            GetComponent<Animator>().SetInteger("WalkDirection", 4);
+        }
     }
 }
 

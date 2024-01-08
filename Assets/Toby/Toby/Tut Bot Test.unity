@@ -361,7 +361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4856145262967924383, guid: e90cf61ff0dd052458fc3c874ffdc738, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.23
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4856145262967924383, guid: e90cf61ff0dd052458fc3c874ffdc738, type: 3}
       propertyPath: m_LocalPosition.y
@@ -405,8 +405,12 @@ PrefabInstance:
       objectReference: {fileID: 1747444429}
     - target: {fileID: 7266156848803129656, guid: e90cf61ff0dd052458fc3c874ffdc738, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7266156848803129663, guid: e90cf61ff0dd052458fc3c874ffdc738, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5f012a4dcd1d69141bd7dae326462d6a, type: 2}
     - target: {fileID: 7365291063472955307, guid: e90cf61ff0dd052458fc3c874ffdc738, type: 3}
       propertyPath: m_Name
       value: 'Tut Bot '
