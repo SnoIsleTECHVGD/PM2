@@ -57,5 +57,22 @@ public class topDownMovement : MonoBehaviour
         {
             dashCoolCounter -= Time.deltaTime;
         }
+        
+        if (Input.GetKey(KeyCode.W))
+        {
+            GetComponent<Animator>().SetInteger("WalkDirection", 1);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            GetComponent<Animator>().SetInteger("WalkDirection", 2);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            GetComponent<Animator>().SetInteger("WalkDirection", 3);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            GetComponent<Animator>().SetInteger("WalkDirection", 4);
+        }
     }
 }
