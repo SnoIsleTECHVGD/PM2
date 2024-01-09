@@ -134,8 +134,9 @@ GameObject:
   - component: {fileID: 25721271}
   - component: {fileID: 25721270}
   - component: {fileID: 25721272}
+  - component: {fileID: 25721273}
   m_Layer: 0
-  m_Name: 9-Sliced
+  m_Name: Time Machine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -200,8 +201,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25721269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.46, y: 2.44, z: 0}
-  m_LocalScale: {x: 3.7625, y: 6.2789063, z: 1}
+  m_LocalPosition: {x: 4.59, y: 1.15, z: 0}
+  m_LocalScale: {x: 2.2575002, y: 3.8458302, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -219,7 +220,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.022027731, y: -0.000000014901161}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0.25, z: 0.25, w: 0.25}
     pivot: {x: 0.5, y: 0.5}
@@ -230,8 +231,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.984375, y: 0.984375}
+  m_Size: {x: 0.5217924, y: 0.6352577}
   m_EdgeRadius: 0
+--- !u!114 &25721273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25721269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5e2836ef40fa3943b51e48b62417184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &163079432
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,19 +660,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2231115362405326775, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
       propertyPath: m_Size.x
-      value: 0.54063654
+      value: 0.47014278
       objectReference: {fileID: 0}
     - target: {fileID: 2231115362405326775, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
       propertyPath: m_Size.y
-      value: 0.9298805
+      value: 0.72593164
       objectReference: {fileID: 0}
     - target: {fileID: 2231115362405326775, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
       propertyPath: m_Offset.x
-      value: -0.028009951
+      value: 0.00723695
       objectReference: {fileID: 0}
     - target: {fileID: 2231115362405326775, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
       propertyPath: m_Offset.y
-      value: 0.08289665
+      value: -0.019077778
       objectReference: {fileID: 0}
     - target: {fileID: 6570279747079023634, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
       propertyPath: m_RootOrder
@@ -667,19 +680,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6570279747079023634, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.1227624
+      value: 1.3727906
       objectReference: {fileID: 0}
     - target: {fileID: 6570279747079023634, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5779747
+      value: 0.948994
       objectReference: {fileID: 0}
     - target: {fileID: 6570279747079023634, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.87
+      value: -2.2347
       objectReference: {fileID: 0}
     - target: {fileID: 6570279747079023634, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.64
+      value: 0.3154
       objectReference: {fileID: 0}
     - target: {fileID: 6570279747079023634, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1084,6 +1097,9 @@ GameObject:
   - component: {fileID: 1331432926}
   - component: {fileID: 1331432927}
   - component: {fileID: 1331432928}
+  - component: {fileID: 1331432929}
+  - component: {fileID: 1331432930}
+  - component: {fileID: 1331432931}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -1196,6 +1212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   attack: 1
+  scraps: {fileID: 0}
 --- !u!50 &1331432927
 Rigidbody2D:
   serializedVersion: 4
@@ -1229,6 +1246,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4218e0dc4ce59f24c86a8b44954873e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1331432929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331432922}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddee93ef0547824c87a16c306daa527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2079900787}
+  speed: 1
+--- !u!114 &1331432930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331432922}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64ad3ef7c01bdd14d9d01e3500e3358a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  checkRadius: 10
+  attackRadius: 10
+  shouldRotate: 0
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 128
+  dir: {x: 0, y: 0, z: 0}
+--- !u!114 &1331432931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331432922}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bfc62617646e4e4d9e70e41d21d915d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scripts: []
+  player: {fileID: 2079900787}
+  distanceBetween: 0
 --- !u!1 &1579171276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,7 +1577,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10.32807
+  orthographic size: 3.7103982
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1536,7 +1602,7 @@ Transform:
   m_GameObject: {fileID: 2058300820}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 0, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1575,6 +1641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   attack: 0
+  scraps: {fileID: 0}
 --- !u!4 &2079900794 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6570279747079023634, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
