@@ -8,10 +8,14 @@ public class Scraps : MonoBehaviour
 {
     int scrapCount;
     public UnityEvent pickupscrap;
+    
 
     public void IncrementScrapCount()
     {
-        scrapCount++;
+        float randomNumber = Random.Range(1, 5);
+        float num = randomNumber;
+        scrapCount = scrapCount + (int)num;
+        
         GetComponent<TextMeshProUGUI>().text = $"Scraps: {scrapCount}";
     }
 }
