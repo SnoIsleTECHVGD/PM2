@@ -7,7 +7,7 @@ public class Stats : MonoBehaviour
     public int health;
     public int attack;
 
-    Scraps scraps;
+    public Scraps scraps;
 
     public void Update()
     {
