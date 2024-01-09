@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2231115362405326410}
   - component: {fileID: -8415299532440605033}
   - component: {fileID: -3295823904400824304}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,6 +203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   attack: 0
+  scraps: {fileID: 0}
 --- !u!114 &-3295823904400824304
 MonoBehaviour:
   m_ObjectHideFlags: 0
