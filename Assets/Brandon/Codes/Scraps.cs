@@ -6,7 +6,8 @@ using UnityEngine.Events;
 
 public class Scraps : MonoBehaviour
 {
-    int scrapCount;
+    public int scrapCount;
+    public int scrapsNeeded;
     public UnityEvent pickupscrap;
     
 
@@ -18,4 +19,5 @@ public class Scraps : MonoBehaviour
         
         GetComponent<TextMeshProUGUI>().text = $"Scraps: {scrapCount}";
     }
+   
 }
