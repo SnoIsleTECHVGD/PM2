@@ -8,9 +8,9 @@ public class deleteFridge : MonoBehaviour
     public Scraps scrapsNeeded;
     public void Update()
     {
-        /*if (scrapCount > scrapsNeeded)
+      /*  if (scrapsNeeded <= scrapCount)
         {
-            //GameObject.SetActive
+            GameObject.SetActive;
         }*/
     }
 }
