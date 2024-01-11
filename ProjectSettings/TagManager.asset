@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Bullet
+  - item
   layers:
   - Default
   - TransparentFX
@@ -16,9 +17,9 @@ TagManager:
   - Tile Map
   - Player
   - 
-  - 
+  - Tiles
   - Bullet
-  - 
+  - Enemy
   - 
   - 
   - 
