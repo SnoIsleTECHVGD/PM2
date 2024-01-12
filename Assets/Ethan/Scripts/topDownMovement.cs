@@ -74,5 +74,13 @@ public class topDownMovement : MonoBehaviour
         {
             GetComponent<Animator>().SetInteger("WalkDirection", 4);
         }
+        if (activeMoveSpeed == dashSpeed)
+        {
+            
+        }
+        else
+        {
+
+        }
     }
 }

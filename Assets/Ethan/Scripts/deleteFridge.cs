@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class deleteFridge : MonoBehaviour
 {
-    public Scraps scrapCount;
-    public Scraps scrapsNeeded;
+    public Scraps scraps;
+    
     public void Update()
     {
-      /*  if (scrapsNeeded <= scrapCount)
+        if (scraps.scrapsNeeded <= scraps.scrapCount)
         {
-            GameObject.SetActive;
-        }*/
+            gameObject.SetActive(false);
+        }
     }
 }
