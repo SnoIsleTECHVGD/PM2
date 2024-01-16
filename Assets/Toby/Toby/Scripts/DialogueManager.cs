@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text dialogueText;
+    public TMPro.TMP_Text dialogueText;
 
     private Queue<string> sentences;
     void Start()

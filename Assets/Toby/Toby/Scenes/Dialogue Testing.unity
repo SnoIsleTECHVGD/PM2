@@ -982,7 +982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59eeef5c89cb384c95cae0a1e907985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: {fileID: 0}
+  dialogueText: {fileID: 1826184548}
 --- !u!1 &1586781839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,8 +1467,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f626bb15c6726b04ebe4f778d4ffc1ad, type: 2}
+  m_sharedMaterial: {fileID: -5436454048925689786, guid: f626bb15c6726b04ebe4f778d4ffc1ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
