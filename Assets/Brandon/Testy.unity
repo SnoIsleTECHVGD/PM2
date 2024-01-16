@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8415299532440605033, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
+      propertyPath: scraps
+      value: 
+      objectReference: {fileID: 2087274165}
     - target: {fileID: 2231115362405326774, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -611,7 +615,19 @@ MonoBehaviour:
   scrapsNeeded: 0
   pickupscrap:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2087274165}
+        m_TargetAssemblyTypeName: Scraps, Assembly-CSharp
+        m_MethodName: IncrementScrapCount
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2087274166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,6 +810,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 721303883}
+    - target: {fileID: 6486570606318593215, guid: c31d882e23010524d945a3051c33f173, type: 3}
+      propertyPath: scraps
+      value: 
+      objectReference: {fileID: 2087274165}
     - target: {fileID: 7537740942566378261, guid: c31d882e23010524d945a3051c33f173, type: 3}
       propertyPath: m_RootOrder
       value: 6
