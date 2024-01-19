@@ -15,6 +15,6 @@ public class Stats : MonoBehaviour
         {
             gameObject.SetActive(false);
             scraps.IncrementScrapCount();
-        }
+        }   
     }
 }

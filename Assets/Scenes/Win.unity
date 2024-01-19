@@ -202,11 +202,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2765539421529664054, guid: db11841eef167e44f8c60c79cc59c8e8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 53.51809
+      value: 254.13126
       objectReference: {fileID: 0}
     - target: {fileID: 2765539421529664054, guid: db11841eef167e44f8c60c79cc59c8e8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 35.3962
+      value: 269.02527
       objectReference: {fileID: 0}
     - target: {fileID: 2765539421529664054, guid: db11841eef167e44f8c60c79cc59c8e8, type: 3}
       propertyPath: m_LocalScale.z
@@ -252,6 +252,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7522950790289834868, guid: db11841eef167e44f8c60c79cc59c8e8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 93eec031512ea48488ca068dd6fb1135, type: 3}
     - target: {fileID: 8287010752656086636, guid: db11841eef167e44f8c60c79cc59c8e8, type: 3}
       propertyPath: m_Name
       value: Fridge
@@ -914,7 +918,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: congratulations, you win!
+  m_text: Congradulations! You've escaped the apocalypse!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -936,7 +940,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 97690656
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
