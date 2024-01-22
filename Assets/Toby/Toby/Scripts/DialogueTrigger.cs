@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public ObjectDialogue dialogue;
+    public Dialogue dialogue;
 
-    public void TriggerDialogue ()
+    public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
