@@ -30,5 +30,6 @@ public class EnemyAnimation : MonoBehaviour
         {
             GetComponent<Animator>().SetInteger("Direction", 3);
         }
+        
     }
 }
