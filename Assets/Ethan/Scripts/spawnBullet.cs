@@ -9,6 +9,7 @@ public class spawnBullet : MonoBehaviour
     public GameObject theCamera;
     public Vector3 HELPPP;
     public int bulletSpeed = 5;
+    public cameraShake cameraShake;
     // Update is called once per frame
     void Update()
     {
@@ -25,6 +26,7 @@ public class spawnBullet : MonoBehaviour
             GameObject projectile = Instantiate(bullet, transform.position, rotation);
             projectile.SetActive(true);
             projectile.GetComponent<Rigidbody2D>().velocity = direction * 5 * bulletSpeed;
+            StartCoroutine(cameraShake.Shake(.15f, .4f));
         }
     }
 }
