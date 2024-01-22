@@ -1152,7 +1152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412588217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.77, y: 1.5609, z: 0}
+  m_LocalPosition: {x: 3.97, y: -1.14, z: 0}
   m_LocalScale: {x: 10.8303, y: 0.8018, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1518,6 +1518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   attack: 0
+  scraps: {fileID: 0}
 --- !u!4 &2079900794 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6570279747079023634, guid: 1ac0bf1e2839c7949a91c34e13573da3, type: 3}
