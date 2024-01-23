@@ -6,7 +6,8 @@ public class Wand : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float range;
-    [SerializeField] float maxDistance;
+    [SerializeField] float maxDistanceX;
+    [SerializeField] float maxDistanceY;
     Vector3 wayPoint;
 
     private void Start()
@@ -25,6 +26,6 @@ public class Wand : MonoBehaviour
     }
     void SetNewDestination()
     {
-        wayPoint = new Vector2(Random.Range(-maxDistance, maxDistance), Random.Range(-maxDistance, maxDistance));
+        wayPoint = new Vector2(Random.Range(-maxDistanceX, maxDistanceX), Random.Range(-maxDistanceY, maxDistanceY));
     }
 }
