@@ -40,6 +40,7 @@ public class topDownMovement : MonoBehaviour
                 activeMoveSpeed = dashSpeed;
                 dashCounter = dashLength;
                 GetComponent<AudioSource>().Play();
+                GetComponent<BoxCollider2D>().enabled = false;
             }
         }
 
@@ -51,6 +52,7 @@ public class topDownMovement : MonoBehaviour
             {
                 activeMoveSpeed = moveSpeed;
                 dashCoolCounter = dashCooldown;
+                GetComponent<BoxCollider2D>().enabled = true;
             }
         }
 
