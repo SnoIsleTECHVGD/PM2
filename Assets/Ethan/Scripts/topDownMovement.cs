@@ -39,6 +39,7 @@ public class topDownMovement : MonoBehaviour
             {
                 activeMoveSpeed = dashSpeed;
                 dashCounter = dashLength;
+                GetComponent<AudioSource>().Play();
             }
         }
 
