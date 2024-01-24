@@ -5,23 +5,10 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float damage;
-    //public Stats stats;
-    public void OnCollisionEnter(Collision collision)
+    public cameraShake cameraShake;
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        /*
-        Enemy other = collision.gameObject.GetComponent<Enemy>();
-        if (other)
-        {
-            // HERE we know that the other object we collided with is an enemy
-            print("Has collided!!");
-            other.stats.hitPoints = -damage;
-        }
-
-          print("Has collided!!");
-
-          stats.hitPoints =- damage; */
-
-
-
+        StartCoroutine(Camera.main.GetComponent<cameraShake>().Shake(.15f, .4f));
     }
 }
