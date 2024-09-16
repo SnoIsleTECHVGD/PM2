@@ -48,7 +48,7 @@ TextureImporter:
       213: -1057893257738317705
     second: Fixed_right_road_tiles_14
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -65,10 +65,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -107,6 +109,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -146,6 +150,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -484,9 +500,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Fixed_right_road_tiles_7: -1665881371226404891
+      Fixed_right_road_tiles_5: 5781546592731798744
+      Fixed_right_road_tiles_12: -9158464789783234800
+      Fixed_right_road_tiles_6: -3389790348438209043
+      Fixed_right_road_tiles_3: 7802799662145341361
+      Fixed_right_road_tiles_2: -5910444652484978506
+      Fixed_right_road_tiles_10: -1668293973084084548
+      Fixed_right_road_tiles_14: -1057893257738317705
+      Fixed_right_road_tiles_13: -1228306929991181340
+      Fixed_right_road_tiles_9: 7451370346755267395
+      Fixed_right_road_tiles_11: -4569898916415852698
+      Fixed_right_road_tiles_4: 512534719542169463
+      Fixed_right_road_tiles_0: -2725936027303233239
+      Fixed_right_road_tiles_8: 3665274008158629980
+      Fixed_right_road_tiles_1: -4244912027436211901
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

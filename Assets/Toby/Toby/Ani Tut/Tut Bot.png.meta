@@ -111,7 +111,7 @@ TextureImporter:
       213: 174419871144219902
     second: Tut Bot_35
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -128,10 +128,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -170,6 +172,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -209,6 +213,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -988,9 +1004,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tut Bot_25: -3948815394008357108
+      Tut Bot_33: 1515501291021107030
+      Tut Bot_15: -5562345482981753210
+      Tut Bot_6: -2249266378433232678
+      Tut Bot_29: -3546257986784877574
+      Tut Bot_32: -2961493969518518304
+      Tut Bot_2: 474863373898582775
+      Tut Bot_8: -8038137772629297551
+      Tut Bot_21: 3993616283567822671
+      Tut Bot_16: 2989376387752619456
+      Tut Bot_28: -8711798590488884745
+      Tut Bot_1: -4198608115704487696
+      Tut Bot_23: -2260460507608166109
+      Tut Bot_34: 213396351809584187
+      Tut Bot_13: 988757635890059841
+      Tut Bot_20: -625167512567096012
+      Tut Bot_30: 5863867789118733328
+      Tut Bot_9: 8243165359972734535
+      Tut Bot_17: 2041086678592557012
+      Tut Bot_7: -5990596932455809016
+      Tut Bot_31: -1729884684344866903
+      Tut Bot_35: 174419871144219902
+      Tut Bot_0: -5156755489299422777
+      Tut Bot_18: -7097296590507983948
+      Tut Bot_3: 7166434856383733460
+      Tut Bot_19: 6896663945567458550
+      Tut Bot_12: -8795463492970077192
+      Tut Bot_22: -3495256908027030914
+      Tut Bot_26: 240047932037705761
+      Tut Bot_11: -6057756294436326624
+      Tut Bot_24: -8706883760569092452
+      Tut Bot_5: -3948040000184912600
+      Tut Bot_4: 1426234033826629061
+      Tut Bot_10: 4488397928454539246
+      Tut Bot_27: 8728625120821286835
+      Tut Bot_14: 8512810323120334973
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

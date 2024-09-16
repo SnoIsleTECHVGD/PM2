@@ -123,7 +123,7 @@ TextureImporter:
       213: 1573857149953334416
     second: Road_Tiles 1_39
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -140,10 +140,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -182,6 +184,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -221,6 +225,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1084,9 +1100,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Road_Tiles 1_36: -1402146849813230832
+      Road_Tiles 1_12: -3842286123165042165
+      Road_Tiles 1_19: 1405501438354512152
+      Road_Tiles 1_25: -5186386466559070118
+      Road_Tiles 1_9: -4939468083902275796
+      Road_Tiles 1_23: 5746708005348472932
+      Road_Tiles 1_17: -7734650492315185542
+      Road_Tiles 1_24: -9195961514317050340
+      Road_Tiles 1_27: -6664891805454485462
+      Road_Tiles 1_11: 4106606257297745110
+      Road_Tiles 1_22: 7867915291825420488
+      Road_Tiles 1_13: 7143556062279095009
+      Road_Tiles 1_3: -7251852673571331995
+      Road_Tiles 1_8: 4498364688249218746
+      Road_Tiles 1_14: -1474693779133420408
+      Road_Tiles 1_18: -5273835840392126259
+      Road_Tiles 1_26: -7368018553877940513
+      Road_Tiles 1_20: 8873811662988379111
+      Road_Tiles 1_30: -6357624026515154618
+      Road_Tiles 1_38: -5318936388267370182
+      Road_Tiles 1_2: -4715354764894710219
+      Road_Tiles 1_4: 8630980518993740668
+      Road_Tiles 1_33: 197515955396127534
+      Road_Tiles 1_34: -6562475244435677547
+      Road_Tiles 1_15: -1468755081898480298
+      Road_Tiles 1_16: 1716101544127545777
+      Road_Tiles 1_35: -8615696189586652633
+      Road_Tiles 1_37: -1438502129640309738
+      Road_Tiles 1_10: -7540248923145009508
+      Road_Tiles 1_7: 2222507365582917667
+      Road_Tiles 1_21: -6931195966886415404
+      Road_Tiles 1_28: 5744907209080347836
+      Road_Tiles 1_32: -5880119252759992003
+      Road_Tiles 1_39: 1573857149953334416
+      Road_Tiles 1_31: -6934253656927165858
+      Road_Tiles 1_0: -8025390030752440497
+      Road_Tiles 1_1: -5978615231668751218
+      Road_Tiles 1_6: 11644572013034098
+      Road_Tiles 1_29: -6172792282589116351
+      Road_Tiles 1_5: 4696805987604456483
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

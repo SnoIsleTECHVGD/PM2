@@ -138,7 +138,7 @@ TextureImporter:
       213: 979984655992861529
     second: Dirt_Tiles_44
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -155,10 +155,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -197,6 +199,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -236,6 +240,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1204,9 +1220,54 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Dirt_Tiles_22: -4427136522940644702
+      Dirt_Tiles_23: -1103402626602821972
+      Dirt_Tiles_37: 2748912622439945688
+      Dirt_Tiles_8: -3239497329226978862
+      Dirt_Tiles_2: 2982295371665848350
+      Dirt_Tiles_10: 6206476353188093250
+      Dirt_Tiles_34: 3454441904446894678
+      Dirt_Tiles_42: 2172343554642039598
+      Dirt_Tiles_6: 1269988650107955816
+      Dirt_Tiles_9: 5681131014172371803
+      Dirt_Tiles_25: -2342654310714732023
+      Dirt_Tiles_21: 611750191181216075
+      Dirt_Tiles_20: -4081899891694644829
+      Dirt_Tiles_32: -3097678133914618203
+      Dirt_Tiles_36: 960518173028941067
+      Dirt_Tiles_39: 3426840567392438502
+      Dirt_Tiles_28: -9120498001665795859
+      Dirt_Tiles_27: -6532013742655597789
+      Dirt_Tiles_40: 8464116371219902222
+      Dirt_Tiles_4: 6218695729058834564
+      Dirt_Tiles_14: 6611988687277154919
+      Dirt_Tiles_33: 5900213715005124761
+      Dirt_Tiles_16: -193080969735148572
+      Dirt_Tiles_41: -8697946051002977033
+      Dirt_Tiles_7: 7958576435033778837
+      Dirt_Tiles_12: -4092865636399909827
+      Dirt_Tiles_11: -1450227950488659217
+      Dirt_Tiles_18: 2667195239539113679
+      Dirt_Tiles_5: -7369174697396590997
+      Dirt_Tiles_24: 7636831229007903900
+      Dirt_Tiles_35: -4361966252126486265
+      Dirt_Tiles_3: -9214345119357303062
+      Dirt_Tiles_30: -806773912457845796
+      Dirt_Tiles_19: 6408392193695778551
+      Dirt_Tiles_31: -5792850327303245470
+      Dirt_Tiles_38: 3084803647484721556
+      Dirt_Tiles_43: 2910406273174159252
+      Dirt_Tiles_44: 979984655992861529
+      Dirt_Tiles_29: 6006637520141755106
+      Dirt_Tiles_0: 1158613216737972597
+      Dirt_Tiles_1: -5628044012336824015
+      Dirt_Tiles_13: -4779531226908932252
+      Dirt_Tiles_15: -7574592556731374507
+      Dirt_Tiles_17: -568467275364108190
+      Dirt_Tiles_26: -1386058954432680531
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

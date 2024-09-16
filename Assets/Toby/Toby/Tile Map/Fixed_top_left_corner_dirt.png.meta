@@ -48,7 +48,7 @@ TextureImporter:
       213: 3821347801272866040
     second: Fixed_top_left_corner_dirt_14
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -65,10 +65,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -107,6 +109,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -146,6 +150,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -484,9 +500,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Fixed_top_left_corner_dirt_0: -7943303667849305489
+      Fixed_top_left_corner_dirt_10: -6490012536464166100
+      Fixed_top_left_corner_dirt_6: 1770546494140592344
+      Fixed_top_left_corner_dirt_12: 1918569004395636078
+      Fixed_top_left_corner_dirt_7: 570136413439194535
+      Fixed_top_left_corner_dirt_11: -3563676277377287736
+      Fixed_top_left_corner_dirt_5: -8926045492655679773
+      Fixed_top_left_corner_dirt_3: 602968166786268203
+      Fixed_top_left_corner_dirt_13: -5970120137425987022
+      Fixed_top_left_corner_dirt_9: 2650936730100601346
+      Fixed_top_left_corner_dirt_2: -878699637084122754
+      Fixed_top_left_corner_dirt_1: 6306398155027214696
+      Fixed_top_left_corner_dirt_4: -8075653856143933786
+      Fixed_top_left_corner_dirt_8: 3313374541882101593
+      Fixed_top_left_corner_dirt_14: 3821347801272866040
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
