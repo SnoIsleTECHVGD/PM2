@@ -78,7 +78,7 @@ public class DialogueManager : MonoBehaviour
     {  
         if (hasPause == true)
         {
-            PauseMenu.dialogueBoxes.Remove(dialogue);
+            //PauseMenu.dialogueBoxes.Remove(dialogue);
         }
         Time.timeScale = 1;
         dialogueOpen = false;

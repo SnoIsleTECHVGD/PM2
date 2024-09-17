@@ -16,9 +16,12 @@ public class spawnBullet : MonoBehaviour
         HELPPP = Input.mousePosition;
         mousePos = theCamera.transform.GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition);
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
-
+            shooting();
+        }
+        else
+        {
             Vector2 target = theCamera.transform.GetComponent<Camera>().ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
             Vector2 myPos = new Vector2(transform.position.x, transform.position.y);
             Vector2 direction = target - myPos;
@@ -29,6 +32,10 @@ public class spawnBullet : MonoBehaviour
             projectile.GetComponent<Rigidbody2D>().velocity = direction * 5 * bulletSpeed;
             StartCoroutine(bulletDelay());
         }
+    }
+    void shooting()
+    {
+
     }
     IEnumerator bulletDelay()
     {
