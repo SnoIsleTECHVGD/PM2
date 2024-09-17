@@ -52,14 +52,14 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         DialoguePiece thisDialogue = conversation.Dequeue();
-        characterName.text = thisDialogue.name;
-        string sentence = thisDialogue.sentence;
-        icon.sprite = thisDialogue.icon;
-        dialogueBox.sprite = thisDialogue.dialogueBox;
         if (thisDialogue.hasUnityEvent == true)
         {
             thisDialogue.dialogueEvent.Invoke();
         }
+        characterName.text = thisDialogue.name;
+        string sentence = thisDialogue.sentence;
+        icon.sprite = thisDialogue.icon;
+        dialogueBox.sprite = thisDialogue.dialogueBox;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }

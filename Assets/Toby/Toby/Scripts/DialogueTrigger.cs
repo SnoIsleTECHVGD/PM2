@@ -13,7 +13,7 @@ public class DialogueTrigger : MonoBehaviour
     public bool onInteractable;
     public UnityEvent triggerOnInteract;
     public UnityEvent triggerOnCollision;
-    public UnityEvent triggerOnCollide;
+    public UnityEvent triggerOnIsTrigger;
     public UnityEvent onSceneEnter;
 
     private void Awake()
@@ -60,7 +60,7 @@ public class DialogueTrigger : MonoBehaviour
         }
         if (interactable == false && collision.gameObject.CompareTag("Player"))
         {
-            triggerOnCollide.Invoke();
+            triggerOnIsTrigger.Invoke();
             TriggerDialogue();
         }
     }
