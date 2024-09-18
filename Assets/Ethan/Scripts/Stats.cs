@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,12 +10,21 @@ public class Stats : MonoBehaviour
 
     public Scraps scraps;
 
-    public void Update()
+    public void OnCollisionEnter2D(Collision2D collision)
     {
+        //TakeDamage();
+        this.gameObject.GetComponent<Stats>().health -= collision.gameObject.GetComponent<Stats>().attack;
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
             scraps.IncrementScrapCount();
-        }   
+        }
+    }
+    public void TakeDamage(int attack)
+    {
+    }
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }
