@@ -7,10 +7,11 @@ using UnityEngine.SceneManagement;
 public class DialogueTrigger : MonoBehaviour
 {
     public DialogueManager manager;
-    public Dialogue dialougeText;
+    public Dialogue dialogueText;
     public KeyCode interact;
     public bool interactable;
     public bool onInteractable;
+    public bool activateOnAwake;
     public UnityEvent triggerOnInteract;
     public UnityEvent triggerOnCollision;
     public UnityEvent triggerOnIsTrigger;
@@ -18,8 +19,11 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Awake()
     {
-        onSceneEnter.Invoke();
-        TriggerDialogue();
+        if (activateOnAwake == true)
+        {
+            onSceneEnter.Invoke();
+            TriggerDialogue();
+        }
     }
 
     void Update()
@@ -84,7 +88,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        manager.StartDialogue(dialougeText);
+        manager.StartDialogue(dialogueText);
     }
 
 }

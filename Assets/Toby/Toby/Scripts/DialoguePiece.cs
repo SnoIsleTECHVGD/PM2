@@ -9,6 +9,6 @@ public struct DialoguePiece
         public Sprite dialogueBox;
         public UnityEvent dialogueEvent;
         public bool hasUnityEvent;
-        [TextArea(3, 10)]
+        [TextArea(3, 100)]
         public string sentence; 
     }

@@ -6,18 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject PausePanel;
+    public GameObject pausePanel;
     public GameObject Timer;
-    public GameObject ScrapCount;
-    public GameObject blacklight;
+    public Timer active;
+    public GameObject scrapCount;
     public KeyCode pause;
-    public List <GameObject> dialogueManagers;
-    public GameObject dialogueBox;
- 
+    static public List<GameObject> dialogueBoxes;
+    // Update is called once per frame
 
     public void Start()
     {
-        dialogueManagers = new List<GameObject>(GameObject.FindGameObjectsWithTag("Dialogue"));
+        dialogueBoxes = new List<GameObject>(GameObject.FindGameObjectsWithTag("DialogueUI"));
     }
 
 
@@ -32,24 +31,33 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         Time.timeScale = 0;
-        PausePanel.SetActive(true);
+        pausePanel.SetActive(true);
         Timer.SetActive(false);
-        ScrapCount.SetActive(false);
-        dialogueBox.SetActive(false);
+        scrapCount.SetActive(false);
+        foreach (GameObject dia in dialogueBoxes)
+        {
+            dia.SetActive(false);
+        }
     }
     public void Continue()
     {
-        PausePanel.SetActive(false);
-        Timer.SetActive(true);
-        ScrapCount.SetActive(true);
-        //foreach (GameObject DialogueManager in dialogueManagers)
-        //{
-            
-        //}
-        //else
-        //{
-            //Time.timeScale = 1;
-        //}
+        pausePanel.SetActive(false);
+        scrapCount.SetActive(true);
+        if (FindObjectsOfType<DialogueManager>().Any(item => item.dialogueOpen == true))
+        {
+            foreach (GameObject dialogue in dialogueBoxes)
+            {
+                dialogue.SetActive(true);
+            }
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+        if (active.isOn == true)
+        {
+            Timer.SetActive(true);
+        }
     }
     public void Quit()
     {

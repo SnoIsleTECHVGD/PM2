@@ -14,22 +14,32 @@ public class DialogueManager : MonoBehaviour
     public KeyCode dialogueContinue;
     public KeyCode dialogueSkip;
     public bool dialogueOpen = false;
-    public GameObject dialogue;
     public bool hasPause;
+    public bool hasDialogueEvents;
+    public DialogueManager dialogueManager;
 
     public UnityEvent endDialogue;
+    public UnityEvent dialogueEventShortcut;
 
     private Queue<DialoguePiece> conversation;
     // Update is called once per frame
+    public void Start()
+    {
+    
+    }
     private void Update()
     {
         if (Input.GetKeyDown(dialogueContinue) == true)
         {
             DisplayNextSentence();
         }
-        if (Input.GetKeyDown(dialogueSkip) == true)
+        if (Input.GetKeyDown(dialogueSkip) == true && this.dialogueOpen == true)
         {
-            this.EndDialogue();
+            if (hasDialogueEvents == true)
+            {
+                dialogueEventShortcut.Invoke();
+            }
+            EndDialogue(dialogueManager);
         }
     }
     public void StartDialogue(Dialogue dialouge)
@@ -48,7 +58,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (conversation.Count == 0)
         {
-            EndDialogue();
+            EndDialogue(dialogueManager);
             return;
         }
         DialoguePiece thisDialogue = conversation.Dequeue();
@@ -74,14 +84,10 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void EndDialogue()
+    private void EndDialogue(DialogueManager thisScript)
     {  
-        if (hasPause == true)
-        {
-            //PauseMenu.dialogueBoxes.Remove(dialogue);
-        }
         Time.timeScale = 1;
         dialogueOpen = false;
-        endDialogue.Invoke();
+        thisScript.endDialogue.Invoke();
     }
 }

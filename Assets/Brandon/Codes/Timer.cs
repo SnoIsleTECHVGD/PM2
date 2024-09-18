@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
     public float remainingTime;
+    public bool isOn;
 
     void Update()
     {
