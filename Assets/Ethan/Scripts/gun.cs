@@ -7,18 +7,20 @@ public class gun : MonoBehaviour
     public float bulletDelayTime;
     public Transform firepoint;
     public GameObject bulletPrefab;
+    public bool canShoot = true;
     // Update is called once per frame
     void Update()
     {//if get button AND other variable called like "has fired" or smth
-        if(Input.GetButton("Fire1"))
+        if(Input.GetButton("Fire1") && canShoot)
         {
             Shoot();
-            StartCoroutine(bulletDelay());
-            
+            canShoot = false;
+            StartCoroutine(bulletDelay());           
         }
     }
     void Shoot()
     {
+
         //shooting logic
         Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
     }
@@ -27,5 +29,6 @@ public class gun : MonoBehaviour
         print(Time.time);
         yield return new WaitForSeconds(bulletDelayTime);
         print(Time.time);
+        canShoot = true;
     }
 }
