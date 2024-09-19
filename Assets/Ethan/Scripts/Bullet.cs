@@ -16,7 +16,6 @@ public class Bullet : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D hitInfo)
     {
-        
         Destroy(gameObject);
         StartCoroutine(Camera.main.GetComponent<cameraShake>().Shake(.15f, .4f));
     }
