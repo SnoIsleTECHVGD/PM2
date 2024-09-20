@@ -16,7 +16,7 @@ public partial class WaveSpawner : MonoBehaviour
     public float timeBetweenWaves;
     public float waveCountdown;
     private GameObject nextEnemy;
-
+    public Timer timer;
     private float searchCountdown = 1f;
 
     public SpawnState state = SpawnState.Counting;
@@ -65,6 +65,7 @@ public partial class WaveSpawner : MonoBehaviour
     {
         state = SpawnState.Counting;
         waveCountdown = timeBetweenWaves;
+        timer.RestartTimer();
         enemiesToSpawn.Clear();
         if (currentWave + 1 > waves.Length - 1)
         {

@@ -6,9 +6,14 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
+    public WaveSpawner waveSpawner;
     public float remainingTime;
     public bool isOn;
 
+    void Start()
+    {
+        remainingTime = waveSpawner.waveCountdown;
+    }
     void Update()
     {
         if(remainingTime > 0)
@@ -18,11 +23,16 @@ public class Timer : MonoBehaviour
         else if(remainingTime < 0)
         {
             remainingTime = 0;
-            // GameOver();
             timerText.color = Color.red;
         }
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+
+    public void RestartTimer()
+    {
+        remainingTime = waveSpawner.waveCountdown;
+        timerText.color = Color.red;
+    }    
 }
