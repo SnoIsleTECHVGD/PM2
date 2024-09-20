@@ -7,7 +7,7 @@ public class Stats : MonoBehaviour
 {
     public int health;
     public int attack;
-
+    public gun.GunType heldGun;
     public Scraps scraps;
 
     public void OnCollisionEnter2D(Collision2D collision)

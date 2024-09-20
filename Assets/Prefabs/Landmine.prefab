@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8595518428891909078}
   m_Layer: 0
   m_Name: Landmine
-  m_TagString: landmine
+  m_TagString: Landmine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
