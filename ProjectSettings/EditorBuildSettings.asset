@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Win.unity
     guid: 9817cecf9e8ff0f48bb844a16887c0e8
   - enabled: 1
-    path: Assets/Scenes/Game_over.unity
+    path: Assets/Scenes/Death n Leaderboard stuff/Game_over.unity
     guid: 4653ec22d52f2ec4793812d2077b3509
   - enabled: 1
     path: Assets/Scenes/Credit Scenes/Brandon_credits.unity
