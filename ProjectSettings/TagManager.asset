@@ -10,6 +10,7 @@ TagManager:
   - Dialogue
   - DialogueUI
   - Landmine
+  - Bush
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - UI
   - Tile Map
   - Player
-  - 
+  - Obstacle
   - Tiles
   - Bullet
   - Enemy

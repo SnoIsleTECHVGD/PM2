@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]   
 public class Stats : MonoBehaviour
 {
     public int health;
@@ -20,15 +21,20 @@ public class Stats : MonoBehaviour
         this.gameObject.GetComponent<Stats>().health -= collision.gameObject.GetComponent<Stats>().attack;
         if (health <= 0)
         {
-            Die();
+            if (this.gameObject.CompareTag("Enemy"))
+            {
             scraps.IncrementScrapCount();
+            }
+            Die();
         }
     }
     public void TakeDamage(int attack)
     {
+    
     }
     void Die()
     {
         Destroy(gameObject);
     }
 }
+
