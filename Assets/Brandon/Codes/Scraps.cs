@@ -11,9 +11,9 @@ public class Scraps : MonoBehaviour
     public UnityEvent pickupscrap;
     
 
-    public void IncrementScrapCount()
+    public void IncrementScrapCount(float maxScraps, float minScraps)
     {
-        float randomNumber = Random.Range(1, 5);
+        float randomNumber = Random.Range(minScraps, maxScraps);
         float num = randomNumber;
         scrapCount = scrapCount + (int)num;
         

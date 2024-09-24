@@ -33,6 +33,6 @@ public class Timer : MonoBehaviour
     public void RestartTimer()
     {
         remainingTime = waveSpawner.waveCountdown;
-        timerText.color = Color.red;
+        timerText.color = Color.white;
     }    
 }

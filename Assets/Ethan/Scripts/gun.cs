@@ -8,7 +8,7 @@ public partial class gun : MonoBehaviour
     public GameObject bulletPrefab;
     public bool canShoot = true;
     public int Ammo = 20;
-    public int bulletDelayTime;
+    public float bulletDelayTime;
     // Update is called once per frame
     void Update()
     {//if get button AND other variable called like "has fired" or smth

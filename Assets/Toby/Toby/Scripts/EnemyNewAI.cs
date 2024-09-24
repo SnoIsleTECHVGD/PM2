@@ -2,22 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.AI;
 using Pathfinding;
 using UnityEditor.Rendering;
 
-public class EnemyNewAI : MonoBehaviour
+public partial class EnemyNewAI : MonoBehaviour
 {
-    [System.Serializable]
-    public struct Enemy
-    {
-        public UnityEvent ability;
-        public bool hasAbility;
-        public float scrapMax;
-        public float scrapMin;
-        public float speed;
-    }
     public Transform target;
     public float nextWaypointDistance = 3f;
     private Pathfinding.Path enemyPath;

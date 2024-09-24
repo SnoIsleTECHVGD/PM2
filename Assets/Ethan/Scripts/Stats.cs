@@ -3,14 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]   
 public class Stats : MonoBehaviour
 {
     public int health;
     public int attack;
     public gun.GunType heldGun;
     public Scraps scraps;
-
+    public float maxScraps;
+    public float minScraps;
+    private EnemyNewAI enemy;
+    void Start()
+    {
+        enemy = GetComponent<EnemyNewAI>();
+        scraps = FindObjectOfType<Scraps>();
+        maxScraps = enemy.thisEnemy.scrapMax;
+        minScraps = enemy.thisEnemy.scrapMin;
+    }
     public void OnCollisionEnter2D(Collision2D collision)
     {
         //TakeDamage();
@@ -23,7 +31,7 @@ public class Stats : MonoBehaviour
         {
             if (this.gameObject.CompareTag("Enemy"))
             {
-            scraps.IncrementScrapCount();
+                scraps.IncrementScrapCount(maxScraps, minScraps);
             }
             Die();
         }
