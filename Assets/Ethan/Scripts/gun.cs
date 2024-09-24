@@ -8,6 +8,7 @@ public partial class gun : MonoBehaviour
     public GameObject bulletPrefab;
     public bool canShoot = true;
     public int Ammo = 20;
+    public int bulletDelayTime;
     // Update is called once per frame
     void Update()
     {//if get button AND other variable called like "has fired" or smth
@@ -15,7 +16,7 @@ public partial class gun : MonoBehaviour
         {
             Shoot();
             canShoot = false;
-            //StartCoroutine(bulletDelay());
+            StartCoroutine(bulletDelay());
             Ammo -= 1;
         }
     }
@@ -39,5 +40,10 @@ public partial class gun : MonoBehaviour
             Ammo += collision.gameObject.GetComponent<ammoProperties>().ammoGiven;
             Destroy(collision.gameObject);
         }
+    }
+    IEnumerator bulletDelay()
+    {
+        yield return new WaitForSeconds(bulletDelayTime);
+        canShoot = true;
     }
 }
