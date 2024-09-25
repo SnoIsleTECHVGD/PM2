@@ -7,7 +7,7 @@ public class Stats : MonoBehaviour
 {
     public int health;
     public int attack;
-    public gun.GunType heldGun;
+    //public gun heldGun;
     public Scraps scraps;
     public float maxScraps;
     public float minScraps;

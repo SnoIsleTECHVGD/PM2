@@ -5,7 +5,9 @@ using UnityEngine;
 public class pointgun : MonoBehaviour
 {
     private Camera mainCam;
-    private Vector3 mousePos;
+    private Vector2 mousePos;
+    public SpriteRenderer gun;
+    public Transform gunRotate;
     //Start is called before the first frame update
     void Start()
     {
@@ -16,11 +18,15 @@ public class pointgun : MonoBehaviour
     void Update()
     {
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
+        transform.right = mousePos - (Vector2)transform.position;
 
-        Vector3 rotation = mousePos - transform.position;
-
-        float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
-
-        transform.rotation = Quaternion.Euler(0, 0, rotZ);
+        if (gunRotate.transform.right.x > 0)
+        {
+            gunRotate.localScale = new Vector2(-0.1f, -0.1f);
+        }
+        else if (gunRotate.transform.right.x < 0)
+        {
+            gunRotate.localScale = new Vector2(-0.1f, 0.1f);
+        }
     }
 }

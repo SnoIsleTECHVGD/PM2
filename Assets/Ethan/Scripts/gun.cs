@@ -5,10 +5,13 @@ using UnityEngine;
 public partial class gun : MonoBehaviour
 {
     public Transform firepoint;
+    public Transform firepoint2;
+    public Transform firepoint3;
     public GameObject bulletPrefab;
     public bool canShoot = true;
     public int Ammo = 20;
     public float bulletDelayTime;
+    public bool hasShotgun;
     // Update is called once per frame
     void Update()
     {//if get button AND other variable called like "has fired" or smth
@@ -16,23 +19,29 @@ public partial class gun : MonoBehaviour
         {
             Shoot();
             canShoot = false;
-            StartCoroutine(bulletDelay());
-            Ammo -= 1;
+            StartCoroutine(BulletDelay());
+            if (hasShotgun == false)
+            {
+                Ammo -= 1;
+            }
+            else if (hasShotgun == true)
+            {
+                Ammo -= 3;
+            }
         }
     }
-    void Shoot()
+    public void Shoot()
     {
-
-        //shooting logic
-        Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
+        if (hasShotgun == false)
+        {
+            Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
+        }
+        else if (hasShotgun == true)
+        {
+            ShotgunShoot();
+        }
+        return;
     }
-    /*IEnumerator bulletDelay()
-    {
-        print(Time.time);
-        yield return new WaitForSeconds(bulletDelayTime);
-        print(Time.time);
-        canShoot = true;
-    }*/
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("ammo"))
@@ -41,9 +50,16 @@ public partial class gun : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-    IEnumerator bulletDelay()
+    IEnumerator BulletDelay()
     {
         yield return new WaitForSeconds(bulletDelayTime);
         canShoot = true;
     }
+    public void ShotgunShoot()
+    {
+        Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
+        Instantiate(bulletPrefab, firepoint2.position, firepoint2.rotation);
+        Instantiate(bulletPrefab, firepoint3.position, firepoint3.rotation);
+    }
+    
 }
