@@ -32,6 +32,7 @@ public class Stats : MonoBehaviour
             if (this.gameObject.CompareTag("Enemy"))
             {
                 scraps.IncrementScrapCount(maxScraps, minScraps);
+                Instantiate(enemy.ammoCache.gameObject, this.gameObject.transform);
             }
             Die();
         }
