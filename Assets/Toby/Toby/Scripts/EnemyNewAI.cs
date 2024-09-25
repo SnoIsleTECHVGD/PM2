@@ -13,7 +13,8 @@ public partial class EnemyNewAI : MonoBehaviour
     private Pathfinding.Path enemyPath;
     public int currentWaypoint = 0;
     private bool reachedEndOfPath = false;
-
+    
+    public GameObject ammoCache;
     public Seeker seeker;
     public Rigidbody2D rb;
 
