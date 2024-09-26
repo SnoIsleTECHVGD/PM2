@@ -128,10 +128,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   attack: 1
-  heldGun:
-    name: 
-    bulletDelayTime: 0
   scraps: {fileID: 0}
+  maxScraps: 0
+  minScraps: 0
 --- !u!114 &6486570606318593208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,6 +314,7 @@ MonoBehaviour:
   target: {fileID: 0}
   nextWaypointDistance: 3
   currentWaypoint: 0
+  ammoCache: {fileID: 69197672294512320, guid: 63e069f4bc5e32f4788d44893221d5da, type: 3}
   seeker: {fileID: 3207003745193801784}
   rb: {fileID: 6486570606318593187}
   thisEnemy:

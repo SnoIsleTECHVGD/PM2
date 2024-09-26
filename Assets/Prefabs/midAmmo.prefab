@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1950470053181004934}
   - component: {fileID: 1950470053181004932}
   - component: {fileID: 1950470053181004933}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: midAmmo
   m_TagString: ammo
   m_Icon: {fileID: 0}

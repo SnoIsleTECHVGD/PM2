@@ -8,6 +8,7 @@ public class pointgun : MonoBehaviour
     private Vector2 mousePos;
     public SpriteRenderer gun;
     public Transform gunRotate;
+    public float firepointAngle;
     //Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,10 @@ public class pointgun : MonoBehaviour
     void Update()
     {
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
+        
         transform.right = mousePos - (Vector2)transform.position;
-
+        transform.Rotate(new Vector3(0, 0, firepointAngle));
+        
         if (gunRotate.transform.right.x > 0)
         {
             gunRotate.localScale = new Vector2(-0.1f, -0.1f);

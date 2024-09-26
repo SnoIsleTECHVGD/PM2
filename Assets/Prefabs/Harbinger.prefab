@@ -314,7 +314,7 @@ MonoBehaviour:
   target: {fileID: 0}
   nextWaypointDistance: 3
   currentWaypoint: 0
-  ammoCache: {fileID: 0}
+  ammoCache: {fileID: 5742695465201039866, guid: 1da431a141e09d84382f91b3f305cbd6, type: 3}
   seeker: {fileID: 3207003745193801784}
   rb: {fileID: 6486570606318593187}
   thisEnemy:
