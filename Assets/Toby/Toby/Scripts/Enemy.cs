@@ -6,7 +6,6 @@ public partial class EnemyNewAI
     public struct Enemy
     {
         public UnityEvent ability;
-        public bool hasAbility;
         public float scrapMax;
         public float scrapMin;
         public float speed;

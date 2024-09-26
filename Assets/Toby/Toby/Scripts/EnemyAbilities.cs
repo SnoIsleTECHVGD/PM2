@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class EnemyAbilities : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject[] summonableEnemies;
+    private Queue<GameObject> enemiesSetToSpawn;
+    public Vector3 offset;
+    public void Summon()
     {
-        
+        GameObject enemy = summonableEnemies[Random.Range(0, summonableEnemies.Length)];
+        Instantiate(enemy, this.transform.position + offset, this.transform.rotation);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Dash()
     {
-        
+
+    }
+
+    public void Projectile()
+    {
+
     }
 }

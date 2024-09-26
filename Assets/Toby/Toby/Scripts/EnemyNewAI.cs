@@ -17,8 +17,10 @@ public partial class EnemyNewAI : MonoBehaviour
     public GameObject ammoCache;
     public Seeker seeker;
     public Rigidbody2D rb;
-
+    public bool hasAbility;
     public Enemy thisEnemy;
+    public float abilityCountdown;
+    public float abilityCountdownMax;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +49,15 @@ public partial class EnemyNewAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (hasAbility == true)
+        {
+            abilityCountdown -= Time.deltaTime;
+            if (abilityCountdown <= 0)
+            {
+                thisEnemy.ability.Invoke();
+                abilityCountdown = abilityCountdownMax;
+            }
+        }
         if (enemyPath == null)
         {
             return;

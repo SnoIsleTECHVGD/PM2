@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 3207003745193801784}
   - component: {fileID: 7058903847516429206}
   - component: {fileID: 3847207092291693410}
+  - component: {fileID: 4000950564200662753}
   m_Layer: 0
   m_Name: The Synthesizer
   m_TagString: Enemy
@@ -131,6 +132,7 @@ MonoBehaviour:
   scraps: {fileID: 0}
   maxScraps: 0
   minScraps: 0
+  ammo: {fileID: 0}
 --- !u!114 &6486570606318593208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,14 +319,28 @@ MonoBehaviour:
   ammoCache: {fileID: 5742695465201039866, guid: 1da431a141e09d84382f91b3f305cbd6, type: 3}
   seeker: {fileID: 3207003745193801784}
   rb: {fileID: 6486570606318593187}
+  hasAbility: 1
   thisEnemy:
     ability:
       m_PersistentCalls:
-        m_Calls: []
-    hasAbility: 0
+        m_Calls:
+        - m_Target: {fileID: 4000950564200662753}
+          m_TargetAssemblyTypeName: EnemyAbilities, Assembly-CSharp
+          m_MethodName: Summon
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     scrapMax: 1000
     scrapMin: 1000
     speed: 500
+  abilityCountdown: 0
+  abilityCountdownMax: 0
 --- !u!60 &3847207092291693410
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -399,3 +415,18 @@ PolygonCollider2D:
       - {x: -0.1796875, y: 0.3515625}
       - {x: -0.1875, y: 0.34375}
   m_UseDelaunayMesh: 0
+--- !u!114 &4000950564200662753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6160871783527236733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdaa124b7568d445a90da7bfb59ca4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  summonableEnemies: []
+  synthesizer: {fileID: 6160871783527236733}
+  offset: {x: 0, y: 0, z: 0}
