@@ -61,7 +61,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -131,6 +131,7 @@ MonoBehaviour:
   scraps: {fileID: 0}
   maxScraps: 0
   minScraps: 0
+  ammo: {fileID: 0}
 --- !u!114 &6486570606318593208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,14 +318,16 @@ MonoBehaviour:
   ammoCache: {fileID: 3240881654532960391, guid: 0ee373296a52f834896831197b8cc543, type: 3}
   seeker: {fileID: 3207003745193801784}
   rb: {fileID: 6486570606318593187}
+  hasAbility: 0
   thisEnemy:
     ability:
       m_PersistentCalls:
         m_Calls: []
-    hasAbility: 0
     scrapMax: 20
     scrapMin: 10
     speed: 800
+  abilityCountdown: 0
+  abilityCountdownMax: 0
 --- !u!60 &3847207092291693410
 PolygonCollider2D:
   m_ObjectHideFlags: 0

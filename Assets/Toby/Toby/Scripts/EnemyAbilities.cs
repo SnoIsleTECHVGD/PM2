@@ -12,12 +12,6 @@ public class EnemyAbilities : MonoBehaviour
         GameObject enemy = summonableEnemies[Random.Range(0, summonableEnemies.Length)];
         Instantiate(enemy, this.transform.position + offset, this.transform.rotation);
     }
-
-    public void Dash()
-    {
-
-    }
-
     public void Projectile()
     {
 
