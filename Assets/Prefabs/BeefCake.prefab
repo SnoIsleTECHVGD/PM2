@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -734652476986339840, guid: ae0253d040917144ba75bea724e78558, type: 3}
+  m_Sprite: {fileID: 543123859, guid: 8542cc32907211443be0ab2ed83b1d48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -166,7 +166,7 @@ Animator:
   m_GameObject: {fileID: 6160871783527236733}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ed4237dbf9f91bd46b4bcc802c195d72, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4e74294221fb71642944020485e7c5d0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -325,7 +325,7 @@ MonoBehaviour:
         m_Calls: []
     scrapMax: 100
     scrapMin: 100
-    speed: 400
+    speed: 800
   abilityCountdown: 0
   abilityCountdownMax: 0
 --- !u!60 &3847207092291693410
