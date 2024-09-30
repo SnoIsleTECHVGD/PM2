@@ -21,6 +21,10 @@ public partial class EnemyNewAI : MonoBehaviour
     public Enemy thisEnemy;
     public float abilityCountdown;
     public float abilityCountdownMax;
+    
+    public bool isRanged;
+    public float distanceToShoot = 5f;
+    public float distanceToStop = 3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +53,18 @@ public partial class EnemyNewAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isRanged == true)
+        {
+            if (Vector2.Distance(target.position, transform.position) >= distanceToStop)
+            {
+                thisEnemy.speed = thisEnemy.maxSpeed;
+                rb.velocity = transform.up * thisEnemy.speed;
+            }
+            else
+            {
+                thisEnemy.speed = 0f;
+            }
+        }
         if (hasAbility == true)
         {
             abilityCountdown -= Time.deltaTime;

@@ -9,5 +9,6 @@ public partial class EnemyNewAI
         public float scrapMax;
         public float scrapMin;
         public float speed;
+        public float maxSpeed;
     }
 }
