@@ -205,7 +205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &313756487
 Transform:
   m_ObjectHideFlags: 0
@@ -3716,8 +3716,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Switch: 101
-  gun: {fileID: 543241429952908918}
-  sword: {fileID: 313756486}
+  gun: {fileID: 101508092}
+  sword: {fileID: 4715669018261830363}
 --- !u!4 &9164140158125811836
 Transform:
   m_ObjectHideFlags: 0
