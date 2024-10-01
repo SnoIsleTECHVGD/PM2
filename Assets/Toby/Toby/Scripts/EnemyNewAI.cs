@@ -23,8 +23,11 @@ public partial class EnemyNewAI : MonoBehaviour
     public float abilityCountdownMax;
     
     public bool isRanged;
-    public float distanceToShoot = 5f;
-    public float distanceToStop = 3f;
+    public float playerDistance;
+    public float slowdownDistance;
+    public float runDistance;
+    public EnemyProjectile projectile;
+    public float runSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,14 +58,25 @@ public partial class EnemyNewAI : MonoBehaviour
     {
         if (isRanged == true)
         {
-            if (Vector2.Distance(target.position, transform.position) >= distanceToStop)
+            playerDistance = Vector2.Distance((Vector2)target.position, (Vector2)transform.position);
+
+            if (playerDistance <= slowdownDistance)
+            {
+                abilityCountdown -= Time.deltaTime;
+                thisEnemy.speed = 0;
+                if (abilityCountdown <= 0)
+                {
+                    projectile.Blast();
+                    abilityCountdown = abilityCountdownMax;
+                }
+            }
+            if (playerDistance > slowdownDistance)
             {
                 thisEnemy.speed = thisEnemy.maxSpeed;
-                rb.velocity = transform.up * thisEnemy.speed;
             }
-            else
+            if (playerDistance <= runDistance)
             {
-                thisEnemy.speed = 0f;
+                thisEnemy.speed = runSpeed;
             }
         }
         if (hasAbility == true)
@@ -70,10 +84,10 @@ public partial class EnemyNewAI : MonoBehaviour
             abilityCountdown -= Time.deltaTime;
             if (abilityCountdown <= 0)
             {
-                thisEnemy.ability.Invoke();
-                abilityCountdown = abilityCountdownMax;
+                ActivateAbility();
             }
         }
+
         if (enemyPath == null)
         {
             return;
@@ -101,4 +115,11 @@ public partial class EnemyNewAI : MonoBehaviour
             currentWaypoint++;
         }
     }
+
+    public void ActivateAbility()
+    {
+        thisEnemy.ability.Invoke();
+        abilityCountdown = abilityCountdownMax;
+    }
+
 }

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5869363394435148230}
   - component: {fileID: 7168994849114608636}
   - component: {fileID: 3513637563133793111}
-  m_Layer: 11
+  m_Layer: 3
   m_Name: Enemy Bullet
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -32,8 +32,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2722416324211212255}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -9.680952, y: -5.902933, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: -9.661, y: -5.938, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4653a422148de09469356a089c4ad87c, type: 3}
-  m_Color: {r: 0.5188679, g: 0.070977226, b: 0.070977226, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.9770231, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -103,9 +103,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0ff4ed15479bb742894576e208fe2ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 2
   cameraShake: {fileID: 0}
-  speed: 20
+  speed: 5
   rb: {fileID: 2574753923754025305}
 --- !u!50 &2574753923754025305
 Rigidbody2D:
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  attack: 1
+  attack: 2
   scraps: {fileID: 0}
   maxScraps: 0
   minScraps: 0
@@ -325,7 +325,7 @@ TrailRenderer:
   m_Time: 0.03
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 5
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -343,8 +343,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5660378, g: 0, b: 0, a: 1}
-      key1: {r: 0.8679245, g: 0.3789387, b: 0, a: 1}
+      key0: {r: 0.5647059, g: 0, b: 0.39497387, a: 1}
+      key1: {r: 0.8666667, g: 0, b: 0.55433965, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}

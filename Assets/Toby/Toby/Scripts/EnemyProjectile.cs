@@ -7,10 +7,10 @@ public class EnemyProjectile : MonoBehaviour
 {
     private Camera mainCam;
     public EnemyNewAI enemyAI;
-    public Transform gunRotate;
     public float firepointAngle;
     public Transform firePoint;
     public GameObject enemyProjectile;
+    public float rotateSpeed;
     //Start is called before the first frame update
     void Start()
     {
@@ -20,23 +20,21 @@ public class EnemyProjectile : MonoBehaviour
     //Update is called once per frame
     void Update()
     {
-        transform.right = (Vector2)enemyAI.target.position - (Vector2)transform.position;
-        transform.Rotate(new Vector3(0, 0, firepointAngle));
-
-        if (gunRotate.transform.right.x > 0)
-        {
-            gunRotate.localScale = new Vector2(-0.1f, -0.1f);
-        }
-        else if (gunRotate.transform.right.x < 0)
-        {
-            gunRotate.localScale = new Vector2(-0.1f, 0.1f);
-        }
+        RotateTowardsTarget();
     }
     
     public void Blast()
     {
+        Debug.Log("making bullet");
         Instantiate(enemyProjectile, firePoint.position, firePoint.rotation);
     }
 
+    public void RotateTowardsTarget()
+    {
+        Vector2 targetDirection = enemyAI.target.position - transform.position;
+        firepointAngle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
+        Quaternion q = Quaternion.Euler(new Vector3(0, 0, firepointAngle));
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotateSpeed);
+    }
 
 }
