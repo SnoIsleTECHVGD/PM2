@@ -9,12 +9,12 @@ public class switcherScript : MonoBehaviour
     public GameObject sword;
     public void Update()
     {
-        if (Input.GetKeyDown("Switch") && gun.gameObject == false)
+        if (Input.GetKeyDown(KeyCode.E) && sword.gameObject == true)
         {
             gun.gameObject.SetActive(true);
             sword.gameObject.SetActive(false);
         }
-        else if (Input.GetKeyDown("Switch") && gun.gameObject == true)
+        else if (Input.GetKeyDown(KeyCode.E) && gun.gameObject == true)
         {
             gun.gameObject.SetActive(false);
             sword.gameObject.SetActive(true);

@@ -556,6 +556,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c5a3bb0d485bd489483a54dac9ce8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRanged: 0
+  AI: {fileID: 0}
+  firepoint1: {fileID: 0}
+  firepoint2: {fileID: 0}
+  firepoint3: {fileID: 0}
+  firepoint4: {fileID: 0}
 --- !u!114 &842169398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,6 +908,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c5a3bb0d485bd489483a54dac9ce8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRanged: 0
+  AI: {fileID: 0}
+  firepoint1: {fileID: 0}
+  firepoint2: {fileID: 0}
+  firepoint3: {fileID: 0}
+  firepoint4: {fileID: 0}
 --- !u!114 &882612329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1248,6 +1260,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c5a3bb0d485bd489483a54dac9ce8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRanged: 0
+  AI: {fileID: 0}
+  firepoint1: {fileID: 0}
+  firepoint2: {fileID: 0}
+  firepoint3: {fileID: 0}
+  firepoint4: {fileID: 0}
 --- !u!114 &910940602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1594,6 +1612,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c5a3bb0d485bd489483a54dac9ce8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRanged: 0
+  AI: {fileID: 0}
+  firepoint1: {fileID: 0}
+  firepoint2: {fileID: 0}
+  firepoint3: {fileID: 0}
+  firepoint4: {fileID: 0}
 --- !u!114 &976499353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2214,6 +2238,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c5a3bb0d485bd489483a54dac9ce8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRanged: 0
+  AI: {fileID: 0}
+  firepoint1: {fileID: 0}
+  firepoint2: {fileID: 0}
+  firepoint3: {fileID: 0}
+  firepoint4: {fileID: 0}
 --- !u!114 &1506471299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3194,8 +3224,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f1524799db359a4a9d9d6be063989ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gun: {fileID: 0}
-  gunRotate: {fileID: 0}
+  gun: {fileID: 899646126411675749}
+  gunRotate: {fileID: 9164140158125811836}
   firepointAngle: 0
 --- !u!50 &6486570605748703489
 Rigidbody2D:
@@ -3296,6 +3326,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c5a3bb0d485bd489483a54dac9ce8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRanged: 0
+  AI: {fileID: 0}
+  firepoint1: {fileID: 0}
+  firepoint2: {fileID: 0}
+  firepoint3: {fileID: 0}
+  firepoint4: {fileID: 0}
 --- !u!114 &6486570605748703514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3716,8 +3752,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Switch: 101
-  gun: {fileID: 101508092}
-  sword: {fileID: 4715669018261830363}
+  gun: {fileID: 5264421748164860614}
+  sword: {fileID: 101508092}
 --- !u!4 &9164140158125811836
 Transform:
   m_ObjectHideFlags: 0

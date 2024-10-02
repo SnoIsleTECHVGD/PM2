@@ -24,11 +24,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Win.unity
     guid: 9817cecf9e8ff0f48bb844a16887c0e8
   - enabled: 1
-    path: Assets/Scenes/Death n Leaderboard stuff/Game_over.unity
+    path: Assets/Scenes/Game_over.unity
     guid: 4653ec22d52f2ec4793812d2077b3509
   - enabled: 1
-    path: Assets/Scenes/Credit Scenes/Brandon_credits.unity
-    guid: 68e8a80a0fd578e4e89235ceabe8687a
+    path: Assets/Scenes/Credit Scenes/Toby Credits.unity
+    guid: fd6345f8bf3775d468e04a9fe09ec6dc
   - enabled: 1
     path: Assets/Scenes/Credit Scenes/Ethan_credits.unity
     guid: 86a18f6bd3b731d4dae63848c6f32512
@@ -39,9 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Credit Scenes/Madison_credits.unity
     guid: c8be960dc7790ea499f9cf609238844b
   - enabled: 1
-    path: Assets/Scenes/Credit Scenes/Toby Credits.unity
-    guid: fd6345f8bf3775d468e04a9fe09ec6dc
-  - enabled: 1
     path: Assets/Scenes/Credit Scenes/Saturn_credits.unity
     guid: 67b4f73ec24158744959cf19a61eb09d
+  - enabled: 1
+    path: Assets/Scenes/Credit Scenes/Brandon_credits.unity
+    guid: 68e8a80a0fd578e4e89235ceabe8687a
   m_configObjects: {}
