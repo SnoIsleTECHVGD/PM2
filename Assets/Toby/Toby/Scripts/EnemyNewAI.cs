@@ -60,6 +60,15 @@ public partial class EnemyNewAI : MonoBehaviour
         {
             playerDistance = Vector2.Distance((Vector2)target.position, (Vector2)transform.position);
 
+            if (playerDistance > slowdownDistance)
+            {
+                abilityCountdown -= Time.deltaTime;
+                if (abilityCountdown <= 0)
+                {
+                    projectile.Blast();
+                    abilityCountdown = abilityCountdownMax;
+                }
+            }
             if (playerDistance <= slowdownDistance)
             {
                 abilityCountdown -= Time.deltaTime;

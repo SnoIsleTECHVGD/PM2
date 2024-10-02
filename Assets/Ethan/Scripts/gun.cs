@@ -8,10 +8,14 @@ public partial class gun : MonoBehaviour
     public Transform firepoint2;
     public Transform firepoint3;
     public GameObject bulletPrefab;
+    public KeyCode switchToShotgun;
     public bool canShoot = true;
     public int Ammo = 20;
     public float bulletDelayTime;
+    public float bulletDelayStorage;
+    public float shotgunDelayTime;
     public bool hasShotgun;
+    public bool shotgunActive;
     // Update is called once per frame
     void Update()
     {//if get button AND other variable called like "has fired" or smth
@@ -28,6 +32,12 @@ public partial class gun : MonoBehaviour
             {
                 Ammo -= 3;
             }
+        }
+        if (Input.GetKeyDown(switchToShotgun) && shotgunActive == false)
+        {
+            shotgunActive = true;
+            bulletDelayStorage = bulletDelayTime;
+            bulletDelayTime = shotgunDelayTime;
         }
     }
     public void Shoot()

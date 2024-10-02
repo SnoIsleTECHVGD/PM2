@@ -107,6 +107,9 @@ MonoBehaviour:
   cameraShake: {fileID: 0}
   speed: 20
   rb: {fileID: 2574753923754025305}
+  playerStats: {fileID: 0}
+  thisStats: {fileID: 4075917189815592749}
+  player: {fileID: 0}
 --- !u!50 &2574753923754025305
 Rigidbody2D:
   serializedVersion: 4

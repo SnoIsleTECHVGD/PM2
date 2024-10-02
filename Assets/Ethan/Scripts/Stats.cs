@@ -13,6 +13,9 @@ public class Stats : MonoBehaviour
     public float minScraps;
     private EnemyNewAI enemy;
     public GameObject ammo;
+    public bool isBullet;
+    public GameObject player;
+    public Stats playerStats;
     void Start()
     {
         enemy = GetComponent<EnemyNewAI>();
@@ -20,6 +23,12 @@ public class Stats : MonoBehaviour
         maxScraps = enemy.thisEnemy.scrapMax;
         minScraps = enemy.thisEnemy.scrapMin;
         ammo = enemy.ammoCache.gameObject;
+        if (isBullet == true)
+        {
+            player = GameObject.Find("Player");
+            playerStats = player.GetComponent<Stats>();
+            attack = playerStats.attack + attack;
+        }
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
