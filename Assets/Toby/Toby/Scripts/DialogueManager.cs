@@ -9,8 +9,8 @@ public class DialogueManager : MonoBehaviour
 {
     public TMPro.TMP_Text dialogueText;
     public TMPro.TMP_Text characterName;
-    public Image icon;
-    public Image dialogueBox;
+    //public Image icon;
+    //public Image dialogueBox;
     public KeyCode dialogueContinue;
     public KeyCode dialogueSkip;
     public bool dialogueOpen = false;
@@ -68,8 +68,8 @@ public class DialogueManager : MonoBehaviour
         }
         characterName.text = thisDialogue.name;
         string sentence = thisDialogue.sentence;
-        icon.sprite = thisDialogue.icon;
-        dialogueBox.sprite = thisDialogue.dialogueBox;
+        //icon.sprite = thisDialogue.icon;
+        //dialogueBox.sprite = thisDialogue.dialogueBox;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
