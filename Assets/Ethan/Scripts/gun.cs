@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public partial class gun : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public partial class gun : MonoBehaviour
     public float shotgunDelayTime;
     public bool hasShotgun;
     public bool shotgunActive;
+    public UnityEvent shotgunSwitch;
+    public UnityEvent gunSwitch;
     // Update is called once per frame
     void Update()
     {//if get button AND other variable called like "has fired" or smth
@@ -24,29 +27,36 @@ public partial class gun : MonoBehaviour
             Shoot();
             canShoot = false;
             StartCoroutine(BulletDelay());
-            if (hasShotgun == false)
+            if (shotgunActive == false)
             {
                 Ammo -= 1;
             }
-            else if (hasShotgun == true)
+            else if (shotgunActive == true)
             {
                 Ammo -= 3;
             }
         }
-        if (Input.GetKeyDown(switchToShotgun) && shotgunActive == false)
+        if (Input.GetKeyDown(switchToShotgun) && shotgunActive == false && hasShotgun == true)
         {
+            shotgunSwitch.Invoke();
             shotgunActive = true;
             bulletDelayStorage = bulletDelayTime;
             bulletDelayTime = shotgunDelayTime;
         }
+        else if (Input.GetKeyDown(switchToShotgun) && shotgunActive == true && hasShotgun == true)
+        {
+            gunSwitch.Invoke();
+            shotgunActive = false;
+            bulletDelayTime = bulletDelayStorage;
+        }
     }
     public void Shoot()
     {
-        if (hasShotgun == false)
+        if (shotgunActive == false)
         {
             Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
         }
-        else if (hasShotgun == true)
+        else if (shotgunActive == true)
         {
             ShotgunShoot();
         }
