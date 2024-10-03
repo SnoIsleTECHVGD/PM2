@@ -6,7 +6,9 @@ using UnityEngine.Events;
 
 public partial class Shop : MonoBehaviour
 {
+    public enum UpgradeType { Health, Speed, Dash, Damage, Landmine, Shotgun}
     public StatsDisplay statsDisplay;
+    public IncrementCost[] costs;
     public Stats playerStats;
     public topDownMovement playerMovement;
     public gun playerGunStats;
@@ -58,6 +60,10 @@ public partial class Shop : MonoBehaviour
             healthUpgrade.upgradeTier++;
             healthUpgrade.cost += healthUpgrade.costIncrease;
             statsDisplay.IncrementStats();
+            foreach (IncrementCost c in costs)
+            {
+                c.IncrementCosts();
+            }
         }
     }
 
@@ -88,6 +94,10 @@ public partial class Shop : MonoBehaviour
             speedUpgrade.upgradeTier++;
             speedUpgrade.cost += speedUpgrade.costIncrease;
             statsDisplay.IncrementStats();
+            foreach (IncrementCost c in costs)
+            {
+                c.IncrementCosts();
+            }
         }
     }
 
@@ -117,6 +127,10 @@ public partial class Shop : MonoBehaviour
             dashUpgrade.upgradeTier++;
             dashUpgrade.cost += dashUpgrade.costIncrease;
             statsDisplay.IncrementStats();
+            foreach (IncrementCost c in costs)
+            {
+                c.IncrementCosts();
+            }
         }
     }
 
@@ -145,6 +159,10 @@ public partial class Shop : MonoBehaviour
             damageUpgrade.upgradeTier++;
             damageUpgrade.cost += damageUpgrade.costIncrease;
             statsDisplay.IncrementStats();
+            foreach (IncrementCost c in costs)
+            {
+                c.IncrementCosts();
+            }
         }
     }
 
@@ -177,6 +195,10 @@ public partial class Shop : MonoBehaviour
             bulletDelayUpgrade.upgradeTier++;
             bulletDelayUpgrade.cost += bulletDelayUpgrade.costIncrease;
             statsDisplay.IncrementStats();
+            foreach (IncrementCost c in costs)
+            {
+                c.IncrementCosts();
+            }
         }
     }
 
@@ -193,6 +215,10 @@ public partial class Shop : MonoBehaviour
             scrapCount.scrapCount -= landmine.cost;
             playerMines.mineCount += 1;
             statsDisplay.IncrementStats();
+            foreach (IncrementCost c in costs)
+            {
+                c.IncrementCosts();
+            }
         }
     }
 
@@ -217,6 +243,10 @@ public partial class Shop : MonoBehaviour
             playerGunStats.hasShotgun = true;
             bulletDelayUpgrade.upgradeTier++;
             statsDisplay.IncrementStats();
+            foreach (IncrementCost c in costs)
+            {
+                c.IncrementCosts();
+            }
         }
     } 
 }

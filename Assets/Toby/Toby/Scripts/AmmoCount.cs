@@ -18,8 +18,5 @@ public class AmmoCount : MonoBehaviour
     {
         textMeshProUGUI.text = $"{Gun.Ammo}";
     }
-    public void IncrementAmmoCount()
-    {
-    }
 
 }

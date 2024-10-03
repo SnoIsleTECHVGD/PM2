@@ -73,6 +73,7 @@ public class DialogueTrigger : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             onInteractable = false;
+
         }
     }
 
