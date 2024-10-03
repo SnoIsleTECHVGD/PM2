@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 public partial class Shop : MonoBehaviour
 {
+    public StatsDisplay statsDisplay;
     public Stats playerStats;
     public topDownMovement playerMovement;
     public gun playerGunStats;
@@ -56,6 +57,7 @@ public partial class Shop : MonoBehaviour
             playerStats.health += (int)healthUpgrade.upgradeIncrease;
             healthUpgrade.upgradeTier++;
             healthUpgrade.cost += healthUpgrade.costIncrease;
+            statsDisplay.IncrementStats();
         }
     }
 
@@ -85,6 +87,7 @@ public partial class Shop : MonoBehaviour
             playerMovement.moveSpeed += speedUpgrade.upgradeIncrease;
             speedUpgrade.upgradeTier++;
             speedUpgrade.cost += speedUpgrade.costIncrease;
+            statsDisplay.IncrementStats();
         }
     }
 
@@ -113,6 +116,7 @@ public partial class Shop : MonoBehaviour
             playerMovement.dashLength += 0.1f;
             dashUpgrade.upgradeTier++;
             dashUpgrade.cost += dashUpgrade.costIncrease;
+            statsDisplay.IncrementStats();
         }
     }
 
@@ -140,6 +144,7 @@ public partial class Shop : MonoBehaviour
             playerStats.attack += (int)damageUpgrade.upgradeIncrease;
             damageUpgrade.upgradeTier++;
             damageUpgrade.cost += damageUpgrade.costIncrease;
+            statsDisplay.IncrementStats();
         }
     }
 
@@ -171,6 +176,7 @@ public partial class Shop : MonoBehaviour
             playerGunStats.bulletDelayTime -= bulletDelayUpgrade.upgradeIncrease;
             bulletDelayUpgrade.upgradeTier++;
             bulletDelayUpgrade.cost += bulletDelayUpgrade.costIncrease;
+            statsDisplay.IncrementStats();
         }
     }
 
@@ -186,6 +192,7 @@ public partial class Shop : MonoBehaviour
         {
             scrapCount.scrapCount -= landmine.cost;
             playerMines.mineCount += 1;
+            statsDisplay.IncrementStats();
         }
     }
 
@@ -209,6 +216,7 @@ public partial class Shop : MonoBehaviour
             scrapCount.scrapCount -= shotgun.cost;
             playerGunStats.hasShotgun = true;
             bulletDelayUpgrade.upgradeTier++;
+            statsDisplay.IncrementStats();
         }
     } 
 }
