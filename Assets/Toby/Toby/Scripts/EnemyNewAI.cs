@@ -62,14 +62,17 @@ public partial class EnemyNewAI : MonoBehaviour
 
             if (playerDistance > slowdownDistance)
             {
+                thisEnemy.speed = thisEnemy.maxSpeed;
                 abilityCountdown -= Time.deltaTime;
                 if (abilityCountdown <= 0)
                 {
+                    thisEnemy.speed = 0;
                     projectile.Blast();
                     abilityCountdown = abilityCountdownMax;
+                    thisEnemy.speed = thisEnemy.maxSpeed;
                 }
             }
-            if (playerDistance <= slowdownDistance)
+            else if (playerDistance <= slowdownDistance)
             {
                 abilityCountdown -= Time.deltaTime;
                 thisEnemy.speed = 0;
@@ -78,10 +81,6 @@ public partial class EnemyNewAI : MonoBehaviour
                     projectile.Blast();
                     abilityCountdown = abilityCountdownMax;
                 }
-            }
-            if (playerDistance > slowdownDistance)
-            {
-                thisEnemy.speed = thisEnemy.maxSpeed;
             }
             if (playerDistance <= runDistance)
             {

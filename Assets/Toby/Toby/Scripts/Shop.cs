@@ -27,6 +27,28 @@ public partial class Shop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        landmine.cost = landmine.initalCost;
+        shotgun.cost = shotgun.initalCost;
+        if (healthUpgrade.upgradeTier == 0)
+        {
+            healthUpgrade.cost = healthUpgrade.initalCost;
+        }
+        if (speedUpgrade.upgradeTier == 0)
+        {
+            speedUpgrade.cost = speedUpgrade.initalCost;
+        }
+        if (dashUpgrade.upgradeTier == 0)
+        {
+            dashUpgrade.cost = dashUpgrade.initalCost;
+        }
+        if (damageUpgrade.upgradeTier == 0)
+        {
+            damageUpgrade.cost = damageUpgrade.initalCost;
+        }
+        if (bulletDelayUpgrade.upgradeTier == 0)
+        {
+            bulletDelayUpgrade.cost = bulletDelayUpgrade.initalCost;
+        }
     }
 
     // Update is called once per frame

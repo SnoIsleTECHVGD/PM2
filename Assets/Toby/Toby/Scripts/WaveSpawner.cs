@@ -10,7 +10,7 @@ public partial class WaveSpawner : MonoBehaviour
 
     public Wave[] waves;
     public Wave CurrentWave => waves[currentWave];
-    private int currentWave = 0;
+    public int currentWave = 0;
 
     public GameObject[] spawnPoints; 
     public float timeBetweenWaves;

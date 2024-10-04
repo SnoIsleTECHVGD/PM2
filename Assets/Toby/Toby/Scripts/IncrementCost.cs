@@ -12,7 +12,32 @@ public class IncrementCost : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        IncrementCosts();
+        switch (thisType)
+        {
+            case UpgradeType.Health:
+                statsText.text = $"{upgrade.healthUpgrade.initalCost}";
+                break;
+            case UpgradeType.Speed:
+                statsText.text = $"{upgrade.speedUpgrade.initalCost}";
+                break;
+            case UpgradeType.Dash:
+                statsText.text = $"{upgrade.dashUpgrade.initalCost}";
+                break;
+            case UpgradeType.Damage:
+                statsText.text = $"{upgrade.damageUpgrade.initalCost}";
+                break;
+            case UpgradeType.Landmine:
+                statsText.text = $"{upgrade.landmine.initalCost}";
+                break;
+            case UpgradeType.Shotgun:
+                statsText.text = $"{upgrade.shotgun.initalCost}";
+                break;
+            case UpgradeType.BulletSpeed:
+                statsText.text = $"{upgrade.bulletDelayUpgrade.initalCost}";
+                break;
+            default:
+                break;
+        }
     }
 
     // Update is called once per frame

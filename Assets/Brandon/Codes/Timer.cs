@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Rendering;
 
 public class Timer : MonoBehaviour
 {
@@ -35,4 +36,9 @@ public class Timer : MonoBehaviour
         remainingTime = waveSpawner.waveCountdown;
         timerText.color = Color.white;
     }    
+
+    public void Bool()
+    {
+        isOn = true;
+    }
 }

@@ -92,4 +92,8 @@ public class DialogueTrigger : MonoBehaviour
         manager.StartDialogue(dialogueText);
     }
 
+    public void SceneLoad()
+    {
+        SceneManager.LoadScene("MainLevel");
+    }
 }

@@ -25,7 +25,6 @@ public class EnemyProjectile : MonoBehaviour
     
     public void Blast()
     {
-        Debug.Log("making bullet");
         Instantiate(enemyProjectile, firePoint.position, firePoint.rotation);
     }
 

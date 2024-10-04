@@ -10,6 +10,8 @@ public class PauseMenu : MonoBehaviour
     public GameObject Timer;
     public Timer active;
     public GameObject scrapCount;
+    public GameObject shop;
+    public GameObject minimap;
     public KeyCode pause;
     static public List<GameObject> dialogueBoxes;
     // Update is called once per frame
@@ -34,6 +36,8 @@ public class PauseMenu : MonoBehaviour
         pausePanel.SetActive(true);
         Timer.SetActive(false);
         scrapCount.SetActive(false);
+        shop.SetActive(false);
+        minimap.SetActive(false);
         foreach (GameObject dia in dialogueBoxes)
         {
             dia.SetActive(false);
@@ -41,22 +45,31 @@ public class PauseMenu : MonoBehaviour
     }
     public void Continue()
     {
-        pausePanel.SetActive(false);
-        scrapCount.SetActive(true);
-        if (FindObjectsOfType<DialogueManager>().Any(item => item.dialogueOpen == true))
+        if (FindObjectOfType<deleteFridge>().isShopOpen == true)
         {
-            foreach (GameObject dialogue in dialogueBoxes)
-            {
-                dialogue.SetActive(true);
-            }
+            pausePanel.SetActive(false);
+            shop.SetActive(true);
         }
         else
         {
-            Time.timeScale = 1;
-        }
-        if (active.isOn == true)
-        {
-            Timer.SetActive(true);
+            pausePanel.SetActive(false);
+            scrapCount.SetActive(true);
+            minimap.SetActive(true);
+            if (FindObjectsOfType<DialogueManager>().Any(item => item.dialogueOpen == true))
+            {
+                foreach (GameObject dialogue in dialogueBoxes)
+                {
+                    dialogue.SetActive(true);
+                }
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
+            if (active.isOn == true)
+            {
+                Timer.SetActive(true);
+            }
         }
     }
     public void Quit()

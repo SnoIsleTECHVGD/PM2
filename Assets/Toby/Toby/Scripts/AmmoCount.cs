@@ -5,8 +5,12 @@ using TMPro;
 
 public class AmmoCount : MonoBehaviour
 {
-    public gun Gun;
-    public TextMeshProUGUI textMeshProUGUI;
+    public gun gun;
+    public Stats player;
+    public WaveSpawner waveCheck;
+    public TextMeshProUGUI ammo;
+    public TextMeshProUGUI health;
+    public TextMeshProUGUI wave;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +20,9 @@ public class AmmoCount : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textMeshProUGUI.text = $"{Gun.Ammo}";
+        ammo.text = $"{gun.Ammo}";
+        health.text = $"{player.health}";
+        wave.text = $"Wave: {waveCheck.currentWave + 1}";
     }
 
 }
