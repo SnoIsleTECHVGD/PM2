@@ -12,26 +12,28 @@ public class deleteFridge : MonoBehaviour
     public GameObject scrapCount;
     public GameObject minimap;
     public DialogueTrigger introToShop;
+    public WaveSpawner waves;
     public void Update()
     {
         if (Input.GetKeyDown(openUpShop) && canInteract == true && isShopOpen == false)
         {
             isShopOpen = true;
             shop.gameObject.SetActive(true);
-            Time.timeScale = 0;
+            waves.enabled = false;
             Timer.gameObject.SetActive(false);
             scrapCount.gameObject.SetActive(false);
-            minimap.gameObject.SetActive(false);
+            //minimap.gameObject.SetActive(false);
             introToShop.TriggerDialogue();
         }
         else if (Input.GetKeyDown(openUpShop) && canInteract == true && isShopOpen == true)
         {
             Time.timeScale = 1;
             isShopOpen = false;
+            waves.enabled = true;
             shop.gameObject.SetActive(false);
             Timer.gameObject.SetActive(true);
             scrapCount.gameObject.SetActive(true);
-            minimap.gameObject.SetActive(true);
+            //minimap.gameObject.SetActive(true);
         }
     }
 

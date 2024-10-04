@@ -59,10 +59,6 @@ public partial class Shop : MonoBehaviour
 
     public void IncreaseHealth()
     {
-        if (healthUpgrade.upgradeTier == 0)
-        {
-            healthUpgrade.cost = healthUpgrade.initalCost;
-        }
         if (scrapCount.scrapCount < healthUpgrade.cost || healthUpgrade.upgradeTier >= healthUpgrade.maxUpgradeTier)
         {
             if (scrapCount.scrapCount < healthUpgrade.cost)
@@ -78,6 +74,9 @@ public partial class Shop : MonoBehaviour
         else if (scrapCount.scrapCount >= healthUpgrade.cost)
         {
             scrapCount.scrapCount -= healthUpgrade.cost;
+            float maxScraps = 0;
+            float minScraps = 0;
+            scrapCount.IncrementScrapCount(maxScraps, minScraps);
             playerStats.health += (int)healthUpgrade.upgradeIncrease;
             healthUpgrade.upgradeTier++;
             healthUpgrade.cost += healthUpgrade.costIncrease;
@@ -93,10 +92,6 @@ public partial class Shop : MonoBehaviour
 
     public void IncreaseSpeed()
     {
-        if (speedUpgrade.upgradeTier == 0)
-        {
-            speedUpgrade.cost = speedUpgrade.initalCost;
-        }
         if (scrapCount.scrapCount < speedUpgrade.cost || speedUpgrade.upgradeTier >= speedUpgrade.maxUpgradeTier)
         {
             if (scrapCount.scrapCount < speedUpgrade.cost)
@@ -112,6 +107,9 @@ public partial class Shop : MonoBehaviour
         else if (scrapCount.scrapCount >= speedUpgrade.cost)
         {
             scrapCount.scrapCount -= speedUpgrade.cost;
+            float maxScraps = 0;
+            float minScraps = 0;
+            scrapCount.IncrementScrapCount(maxScraps, minScraps);
             playerMovement.moveSpeed += speedUpgrade.upgradeIncrease;
             speedUpgrade.upgradeTier++;
             speedUpgrade.cost += speedUpgrade.costIncrease;
@@ -125,10 +123,6 @@ public partial class Shop : MonoBehaviour
 
     public void UpgradeDash()
     {
-        if (dashUpgrade.upgradeTier == 0)
-        {
-            dashUpgrade.cost = dashUpgrade.initalCost;
-        }
         if (scrapCount.scrapCount < dashUpgrade.cost || dashUpgrade.upgradeTier >= dashUpgrade.maxUpgradeTier)
         {
             if (scrapCount.scrapCount < dashUpgrade.cost)
@@ -144,6 +138,9 @@ public partial class Shop : MonoBehaviour
         else if (scrapCount.scrapCount >= dashUpgrade.cost)
         {
             scrapCount.scrapCount -= dashUpgrade.cost;
+            float maxScraps = 0;
+            float minScraps = 0;
+            scrapCount.IncrementScrapCount(maxScraps, minScraps);
             playerMovement.dashSpeed += dashUpgrade.upgradeIncrease;
             playerMovement.dashLength += 0.1f;
             dashUpgrade.upgradeTier++;
@@ -158,10 +155,6 @@ public partial class Shop : MonoBehaviour
 
     public void IncreaseDamage()
     {
-        if (damageUpgrade.upgradeTier == 0)
-        {
-            damageUpgrade.cost = damageUpgrade.initalCost;
-        }
         if (scrapCount.scrapCount < damageUpgrade.cost || damageUpgrade.upgradeTier >= damageUpgrade.maxUpgradeTier)
         {
             if (scrapCount.scrapCount < damageUpgrade.cost)
@@ -177,6 +170,9 @@ public partial class Shop : MonoBehaviour
         else if (scrapCount.scrapCount >= damageUpgrade.cost)
         {
             scrapCount.scrapCount -= damageUpgrade.cost;
+            float maxScraps = 0;
+            float minScraps = 0;
+            scrapCount.IncrementScrapCount(maxScraps, minScraps);
             playerStats.attack += (int)damageUpgrade.upgradeIncrease;
             damageUpgrade.upgradeTier++;
             damageUpgrade.cost += damageUpgrade.costIncrease;
@@ -190,10 +186,6 @@ public partial class Shop : MonoBehaviour
 
     public void DecreaseBulletDelay()
     {
-        if (bulletDelayUpgrade.upgradeTier == 0)
-        {
-            bulletDelayUpgrade.cost = bulletDelayUpgrade.initalCost;
-        }
         if (scrapCount.scrapCount < bulletDelayUpgrade.cost || bulletDelayUpgrade.upgradeTier >= bulletDelayUpgrade.maxUpgradeTier || playerGunStats.shotgunActive == true)
         {
             if (scrapCount.scrapCount < bulletDelayUpgrade.cost)
@@ -213,6 +205,9 @@ public partial class Shop : MonoBehaviour
         else if (scrapCount.scrapCount >= bulletDelayUpgrade.cost && playerGunStats.shotgunActive == false)
         {
             scrapCount.scrapCount -= bulletDelayUpgrade.cost;
+            float maxScraps = 0;
+            float minScraps = 0;
+            scrapCount.IncrementScrapCount(maxScraps, minScraps);
             playerGunStats.bulletDelayTime -= bulletDelayUpgrade.upgradeIncrease;
             bulletDelayUpgrade.upgradeTier++;
             bulletDelayUpgrade.cost += bulletDelayUpgrade.costIncrease;
@@ -226,7 +221,6 @@ public partial class Shop : MonoBehaviour
 
     public void BuyLandmine()
     {
-        landmine.cost = landmine.initalCost;
         if (scrapCount.scrapCount < landmine.cost)
         {
             rejectionCost.Invoke();
@@ -235,6 +229,9 @@ public partial class Shop : MonoBehaviour
         else if (scrapCount.scrapCount >= landmine.cost)
         {
             scrapCount.scrapCount -= landmine.cost;
+            float maxScraps = 0;
+            float minScraps = 0;
+            scrapCount.IncrementScrapCount(maxScraps, minScraps);
             playerMines.mineCount += 1;
             statsDisplay.IncrementStats();
             foreach (IncrementCost c in costs)
@@ -246,7 +243,6 @@ public partial class Shop : MonoBehaviour
 
     public void UnlockShotgun()
     {
-        shotgun.cost = shotgun.initalCost;
         if (scrapCount.scrapCount < shotgun.cost || shotgun.upgradeTier >= shotgun.maxUpgradeTier)
         {
             if (scrapCount.scrapCount < shotgun.cost)
@@ -262,6 +258,9 @@ public partial class Shop : MonoBehaviour
         else if (scrapCount.scrapCount >= shotgun.cost)
         {
             scrapCount.scrapCount -= shotgun.cost;
+            float maxScraps = 0;
+            float minScraps = 0;
+            scrapCount.IncrementScrapCount(maxScraps, minScraps);
             playerGunStats.hasShotgun = true;
             bulletDelayUpgrade.upgradeTier++;
             statsDisplay.IncrementStats();

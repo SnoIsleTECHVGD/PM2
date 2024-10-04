@@ -10,6 +10,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject Timer;
     public Timer active;
     public GameObject scrapCount;
+    public GameObject otherCounts;
     public GameObject shop;
     public GameObject minimap;
     public KeyCode pause;
@@ -38,6 +39,7 @@ public class PauseMenu : MonoBehaviour
         scrapCount.SetActive(false);
         shop.SetActive(false);
         minimap.SetActive(false);
+        otherCounts.SetActive(false);
         foreach (GameObject dia in dialogueBoxes)
         {
             dia.SetActive(false);
@@ -54,6 +56,7 @@ public class PauseMenu : MonoBehaviour
         {
             pausePanel.SetActive(false);
             scrapCount.SetActive(true);
+            otherCounts.SetActive(true);
             minimap.SetActive(true);
             if (FindObjectsOfType<DialogueManager>().Any(item => item.dialogueOpen == true))
             {
