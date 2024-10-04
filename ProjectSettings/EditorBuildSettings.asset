@@ -24,14 +24,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Settings.unity
     guid: 5b24d742483f35240a9d7cdbe2055de6
   - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: ca3634c95b7be7b489176d44a988f51d
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: c261b9eb37edf4e428df2323767f3018
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 9817cecf9e8ff0f48bb844a16887c0e8
-  - enabled: 1
-    path: Assets/Scenes/Game_over.unity
-    guid: 4653ec22d52f2ec4793812d2077b3509
   - enabled: 1
     path: Assets/Scenes/Credit Scenes/Toby Credits.unity
     guid: fd6345f8bf3775d468e04a9fe09ec6dc
