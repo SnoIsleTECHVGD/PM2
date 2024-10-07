@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class cameraShake : MonoBehaviour
 {
-    
+    Vignette vignette;
+    private void Start()
+    {
+            vignette = this.gameObject.GetComponent<Vignette>();
+    }
     public IEnumerator Shake(float duration, float magnitude)
     {
         Vector2 originalPos = transform.localPosition;
@@ -26,5 +31,10 @@ public class cameraShake : MonoBehaviour
         transform.localPosition = originalPos;
 
     }
-
+    public IEnumerator ChangeVignette()
+    {
+        vignette.color.Override(new Color (255f, 0f, 0f));
+        yield return new WaitForSeconds(0.2f);
+        vignette.color.Override(Color.grey);
+    }
 }

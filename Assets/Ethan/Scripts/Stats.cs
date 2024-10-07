@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Stats : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class Stats : MonoBehaviour
     public GameObject player;
     public Stats playerStats;
     public GameObject splodin;
+    public Vignette vignette;
+    //public GameObject daCamera = Camera.main.gameObject;
     void Start()
     {
         enemy = GetComponent<EnemyNewAI>();
@@ -30,6 +33,7 @@ public class Stats : MonoBehaviour
             playerStats = player.GetComponent<Stats>();
             attack = playerStats.attack + attack;
         }
+        vignette = Camera.main.GetComponent<Vignette>();
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -43,9 +47,10 @@ public class Stats : MonoBehaviour
         {
             Die();
         }
-        if (this.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            //Camera.main.
+            StartCoroutine(Camera.main.GetComponent<cameraShake>().ChangeVignette());
+            StartCoroutine(Camera.main.GetComponent<cameraShake>().Shake(.20f, 1f));
         }
     }
     public void TakeDamage(int attack)
