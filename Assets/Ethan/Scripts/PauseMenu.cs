@@ -47,13 +47,10 @@ public class PauseMenu : MonoBehaviour
     }
     public void Continue()
     {
-        if (FindObjectOfType<deleteFridge>().isShopOpen == true)
+        if (FindObjectOfType<deleteFridge>().isShopOpen == false)
         {
-            pausePanel.SetActive(false);
-            shop.SetActive(true);
-        }
-        else
-        {
+            Time.timeScale = 1;
+            Timer.SetActive(true);
             pausePanel.SetActive(false);
             scrapCount.SetActive(true);
             otherCounts.SetActive(true);
@@ -65,14 +62,12 @@ public class PauseMenu : MonoBehaviour
                     dialogue.SetActive(true);
                 }
             }
-            else
-            {
-                Time.timeScale = 1;
-            }
-            if (active.isOn == true)
-            {
-                Timer.SetActive(true);
-            }
+           
+        }
+        else if (FindObjectOfType<deleteFridge>().isShopOpen == true)
+        {
+            pausePanel.SetActive(false);
+            shop.SetActive(true);
         }
     }
     public void Quit()

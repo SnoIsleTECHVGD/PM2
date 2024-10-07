@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1699758145208528083}
   - component: {fileID: 8724489480644736305}
-  - component: {fileID: 8724489480644736304}
+  - component: {fileID: 4830021209515480742}
   m_Layer: 0
   m_Name: Second Building 1
   m_TagString: Untagged
@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -33.13, y: 21.4069, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,6 +44,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -83,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &8724489480644736304
-PolygonCollider2D:
+--- !u!61 &4830021209515480742
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,7 +98,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.25405538, y: -0.35210073}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -106,23 +108,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.07094771, y: -0.26836607}
-      - {x: -0.07339997, y: -0.26030052}
-      - {x: -0.14373341, y: -0.25391376}
-      - {x: -0.07051341, y: -0.26061845}
-      - {x: -0.07803503, y: -0.26502013}
-      - {x: -0.07135456, y: -0.259707}
-      - {x: -0.13472569, y: -0.25440198}
-      - {x: -0.13850977, y: -0.25460935}
-      - {x: -0.29535595, y: -0.2505321}
-      - {x: -0.4036766, y: -0.25121015}
-      - {x: -0.43423632, y: -0.25089803}
-      - {x: -0.4350798, y: -0.45266414}
-      - {x: -0.33370072, y: -0.4678282}
-      - {x: -0.31128806, y: -0.49499363}
-      - {x: -0.19896547, y: -0.4998711}
-      - {x: -0.18306112, y: -0.47768795}
-      - {x: -0.11857645, y: -0.46254686}
-      - {x: -0.072569296, y: -0.4479167}
+  serializedVersion: 2
+  m_Size: {x: 0.37975502, y: 0.20408341}
+  m_EdgeRadius: 0

@@ -377,6 +377,7 @@ MonoBehaviour:
   isBullet: 0
   player: {fileID: 0}
   playerStats: {fileID: 0}
+  splodin: {fileID: 8567638350105959537, guid: 961537734078bba4f92b67a95534c535, type: 3}
 --- !u!114 &6486570606318593208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,8 +578,8 @@ MonoBehaviour:
     ability:
       m_PersistentCalls:
         m_Calls: []
-    scrapMax: 100
-    scrapMin: 100
+    scrapMax: 1000
+    scrapMin: 1000
     speed: 800
     maxSpeed: 0
   abilityCountdown: 0
