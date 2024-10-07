@@ -43,10 +43,14 @@ public class Stats : MonoBehaviour
         {
             Die();
         }
+        if (this.gameObject.CompareTag("Player"))
+        {
+            //Camera.main.
+        }
     }
     public void TakeDamage(int attack)
     {
-    
+        
     }
     void Die()
     {
