@@ -291,111 +291,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &211333114
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 211333117}
-  - component: {fileID: 211333116}
-  - component: {fileID: 211333115}
-  m_Layer: 0
-  m_Name: BOOM 2 sprite_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!95 &211333115
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 211333114}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ee7e993ffe9b6a64faeb081a59dfcca7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!212 &211333116
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 211333114}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -924741625, guid: 284da53a16360c14f89e9484fc7c9bdc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &211333117
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 211333114}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07901512, y: -4.9125323, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &335632437
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,6 +704,9 @@ MonoBehaviour:
   firepoint2: {fileID: 0}
   firepoint3: {fileID: 0}
   firepoint4: {fileID: 0}
+  light1: {fileID: 0}
+  light2: {fileID: 0}
+  dotSuccess: 0
 --- !u!114 &842169398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,6 +740,7 @@ MonoBehaviour:
   isBullet: 0
   player: {fileID: 0}
   playerStats: {fileID: 0}
+  splodin: {fileID: 8567638350105959537, guid: 961537734078bba4f92b67a95534c535, type: 3}
 --- !u!61 &842169400
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1164,6 +1063,9 @@ MonoBehaviour:
   firepoint2: {fileID: 0}
   firepoint3: {fileID: 0}
   firepoint4: {fileID: 0}
+  light1: {fileID: 0}
+  light2: {fileID: 0}
+  dotSuccess: 0
 --- !u!114 &882612329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1197,6 +1099,7 @@ MonoBehaviour:
   isBullet: 0
   player: {fileID: 0}
   playerStats: {fileID: 0}
+  splodin: {fileID: 8567638350105959537, guid: 961537734078bba4f92b67a95534c535, type: 3}
 --- !u!61 &882612331
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1603,6 +1506,9 @@ MonoBehaviour:
   firepoint2: {fileID: 0}
   firepoint3: {fileID: 0}
   firepoint4: {fileID: 0}
+  light1: {fileID: 0}
+  light2: {fileID: 0}
+  dotSuccess: 0
 --- !u!114 &910940602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1636,6 +1542,7 @@ MonoBehaviour:
   isBullet: 0
   player: {fileID: 0}
   playerStats: {fileID: 0}
+  splodin: {fileID: 8567638350105959537, guid: 961537734078bba4f92b67a95534c535, type: 3}
 --- !u!61 &910940604
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1958,6 +1865,9 @@ MonoBehaviour:
   firepoint2: {fileID: 0}
   firepoint3: {fileID: 0}
   firepoint4: {fileID: 0}
+  light1: {fileID: 0}
+  light2: {fileID: 0}
+  dotSuccess: 0
 --- !u!114 &976499353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1991,6 +1901,7 @@ MonoBehaviour:
   isBullet: 0
   player: {fileID: 0}
   playerStats: {fileID: 0}
+  splodin: {fileID: 8567638350105959537, guid: 961537734078bba4f92b67a95534c535, type: 3}
 --- !u!61 &976499355
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2839,6 +2750,9 @@ MonoBehaviour:
   firepoint2: {fileID: 0}
   firepoint3: {fileID: 0}
   firepoint4: {fileID: 0}
+  light1: {fileID: 0}
+  light2: {fileID: 0}
+  dotSuccess: 0
 --- !u!114 &1506471299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2872,6 +2786,7 @@ MonoBehaviour:
   isBullet: 0
   player: {fileID: 0}
   playerStats: {fileID: 0}
+  splodin: {fileID: 8567638350105959537, guid: 961537734078bba4f92b67a95534c535, type: 3}
 --- !u!61 &1506471301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3108,6 +3023,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1220900907807416367, guid: 92d120a07bea25543be4b7c214ad67b5, type: 3}
+      propertyPath: waitToDes
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 1220900907807416403, guid: 92d120a07bea25543be4b7c214ad67b5, type: 3}
       propertyPath: m_Controller
       value: 
@@ -4077,10 +3996,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8b957f461c643479678d2ff14124bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  droppoint: {fileID: 0}
+  droppoint: {fileID: 2765592693283174916}
   mineCount: 5
   minePrefab: {fileID: 5745475280500896935, guid: 7d5ab47ebb19ac445b513a9caf1657a6, type: 3}
-  mineOffset: {x: 0, y: 0, z: 0}
+  mineOffset: {x: 0, y: 1, z: 0}
 --- !u!1 &4341015409935588363
 GameObject:
   m_ObjectHideFlags: 0
@@ -4812,6 +4731,9 @@ MonoBehaviour:
   firepoint2: {fileID: 0}
   firepoint3: {fileID: 0}
   firepoint4: {fileID: 0}
+  light1: {fileID: 0}
+  light2: {fileID: 0}
+  dotSuccess: 0
 --- !u!114 &6486570605748703514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4882,6 +4804,7 @@ MonoBehaviour:
   isBullet: 0
   player: {fileID: 0}
   playerStats: {fileID: 0}
+  splodin: {fileID: 8567638350105959537, guid: 961537734078bba4f92b67a95534c535, type: 3}
 --- !u!114 &6486570605748703518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5192,3 +5115,4 @@ MonoBehaviour:
   isBullet: 0
   player: {fileID: 0}
   playerStats: {fileID: 0}
+  splodin: {fileID: 0}

@@ -105,7 +105,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -142,9 +142,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fdd44f1df3d4b54a8e0d96ba0aa9422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  health: 1
   attack: 5
   scraps: {fileID: 0}
+  maxScraps: 0
+  minScraps: 0
+  ammo: {fileID: 0}
+  isBullet: 0
+  player: {fileID: 0}
+  playerStats: {fileID: 0}
+  splodin: {fileID: 8567638350105959537, guid: 92d120a07bea25543be4b7c214ad67b5, type: 3}
 --- !u!114 &8595518428891909078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,4 +164,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ca3066a64e2ba440a071911cc5130b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splodeTime: 0
+  splodeTime: 1

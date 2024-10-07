@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1220900907807416403}
   - component: {fileID: 1220900907807416364}
   - component: {fileID: 1220900907807416367}
+  - component: {fileID: 9100463163374274141}
+  - component: {fileID: 388693321095311100}
   m_Layer: 0
   m_Name: mineBewm
   m_TagString: Untagged
@@ -29,11 +31,11 @@ Transform:
   m_GameObject: {fileID: 8567638350105959537}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.34629536, y: -4.237227, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1220900907807416402
 SpriteRenderer:
@@ -97,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 8567638350105959537}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffcf178aedb7537409f4700527b39bd1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ee7e993ffe9b6a64faeb081a59dfcca7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -215,4 +217,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0328916f7ea935f498b114f527caab95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToDes: 0.8
+  waitToDes: 0.4
+--- !u!58 &9100463163374274141
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567638350105959537}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.32
+--- !u!114 &388693321095311100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567638350105959537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdd44f1df3d4b54a8e0d96ba0aa9422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2000
+  attack: 8
+  scraps: {fileID: 0}
+  maxScraps: 0
+  minScraps: 0
+  ammo: {fileID: 0}
+  isBullet: 0
+  player: {fileID: 0}
+  playerStats: {fileID: 0}
+  splodin: {fileID: 0}

@@ -16,6 +16,7 @@ public class Stats : MonoBehaviour
     public bool isBullet;
     public GameObject player;
     public Stats playerStats;
+    public GameObject splodin;
     void Start()
     {
         enemy = GetComponent<EnemyNewAI>();
@@ -54,6 +55,7 @@ public class Stats : MonoBehaviour
             scraps.IncrementScrapCount(maxScraps, minScraps);
             Instantiate(ammo, this.transform.position, this.transform.rotation);
         }
+        Instantiate(splodin, this.transform.position, this.transform.rotation);
         Destroy(gameObject);
     }
 }
