@@ -18,22 +18,21 @@ public class Stats : MonoBehaviour
     public GameObject player;
     public Stats playerStats;
     public GameObject splodin;
-    public Vignette vignette;
+    public bool isBeef;
     //public GameObject daCamera = Camera.main.gameObject;
     void Start()
     {
+        player = GameObject.Find("Player");
+        playerStats = player.GetComponent<Stats>();
+        if (isBullet == true)
+        {
+            attack = playerStats.attack + attack;
+        }
         enemy = GetComponent<EnemyNewAI>();
         scraps = FindObjectOfType<Scraps>();
         maxScraps = enemy.thisEnemy.scrapMax;
         minScraps = enemy.thisEnemy.scrapMin;
         ammo = enemy.ammoCache.gameObject;
-        if (isBullet == true)
-        {
-            player = GameObject.Find("Player");
-            playerStats = player.GetComponent<Stats>();
-            attack = playerStats.attack + attack;
-        }
-        vignette = Camera.main.GetComponent<Vignette>();
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -61,6 +60,10 @@ public class Stats : MonoBehaviour
     {
         if (this.gameObject.CompareTag("Enemy"))
         {
+            if (isBeef == true)
+            {
+                Camera.main.orthographicSize = 4.5f;
+            }
             scraps.IncrementScrapCount(maxScraps, minScraps);
             Instantiate(ammo, this.transform.position, this.transform.rotation);
         }

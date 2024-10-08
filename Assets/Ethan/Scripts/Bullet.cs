@@ -9,14 +9,18 @@ public class Bullet : MonoBehaviour
     public cameraShake cameraShake;
     public float speed = 20f;
     public Rigidbody2D rb;
+    public Stats playerStats;
+    public GameObject player;
     public void Start()
     {
+        player = GameObject.Find("Player");
+        playerStats = player.GetComponent<Stats>();
         rb.velocity = transform.right * speed;
+        damage = damage + playerStats.attack;
     }
 
     public void Update()
     {
-      
     }
     private void OnCollisionEnter2D(Collision2D hitInfo)
     {

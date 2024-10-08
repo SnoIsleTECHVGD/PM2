@@ -357,7 +357,7 @@ MonoBehaviour:
     speed: 500
     maxSpeed: 0
   abilityCountdown: 0
-  abilityCountdownMax: 0
+  abilityCountdownMax: 50
   isRanged: 0
   playerDistance: 0
   slowdownDistance: 0
@@ -452,11 +452,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   summonableEnemies:
   - {fileID: 6160871783527236733, guid: c31d882e23010524d945a3051c33f173, type: 3}
+  - {fileID: 6160871783527236733, guid: c31d882e23010524d945a3051c33f173, type: 3}
+  - {fileID: 6160871783527236733, guid: c31d882e23010524d945a3051c33f173, type: 3}
+  - {fileID: 6160871783527236733, guid: c31d882e23010524d945a3051c33f173, type: 3}
+  - {fileID: 6160871783527236733, guid: c31d882e23010524d945a3051c33f173, type: 3}
+  - {fileID: 6160871783527236733, guid: c31d882e23010524d945a3051c33f173, type: 3}
+  - {fileID: 6160871783527236733, guid: c31d882e23010524d945a3051c33f173, type: 3}
+  - {fileID: 6160871783527236733, guid: c31d882e23010524d945a3051c33f173, type: 3}
+  - {fileID: 6160871783527236733, guid: bdb122ad3257f924fa142617d2c226f5, type: 3}
+  - {fileID: 6160871783527236733, guid: bdb122ad3257f924fa142617d2c226f5, type: 3}
+  - {fileID: 6160871783527236733, guid: bdb122ad3257f924fa142617d2c226f5, type: 3}
+  - {fileID: 6160871783527236733, guid: bdb122ad3257f924fa142617d2c226f5, type: 3}
+  - {fileID: 6160871783527236733, guid: bdb122ad3257f924fa142617d2c226f5, type: 3}
   - {fileID: 6160871783527236733, guid: bdb122ad3257f924fa142617d2c226f5, type: 3}
   - {fileID: 6160871783527236733, guid: 7ccee2cefe582b745a52929c7a663d43, type: 3}
-  - {fileID: 6160871783527236733, guid: 8831f79209b3e8f40a4f3ff5e2cf4abb, type: 3}
+  - {fileID: 6160871783527236733, guid: 7ccee2cefe582b745a52929c7a663d43, type: 3}
+  - {fileID: 6160871783527236733, guid: 7ccee2cefe582b745a52929c7a663d43, type: 3}
+  - {fileID: 6160871783527236733, guid: 7ccee2cefe582b745a52929c7a663d43, type: 3}
   - {fileID: 6160871783527236733, guid: eac454b0f132aa84490da62095a7799c, type: 3}
   - {fileID: 6160871783527236733, guid: 18fc586004bf4fa4a806b9f63017b6c0, type: 3}
+  - {fileID: 6160871783527236733, guid: 8831f79209b3e8f40a4f3ff5e2cf4abb, type: 3}
+  - {fileID: 6160871783527236733, guid: 8831f79209b3e8f40a4f3ff5e2cf4abb, type: 3}
+  - {fileID: 6160871783527236733, guid: 8831f79209b3e8f40a4f3ff5e2cf4abb, type: 3}
+  - {fileID: 6160871783527236733, guid: 8831f79209b3e8f40a4f3ff5e2cf4abb, type: 3}
+  - {fileID: 6160871783527236733, guid: 8831f79209b3e8f40a4f3ff5e2cf4abb, type: 3}
+  - {fileID: 6160871783527236733, guid: 8831f79209b3e8f40a4f3ff5e2cf4abb, type: 3}
   offset: {x: 10, y: 0, z: 0}
 --- !u!114 &98674367785405088
 MonoBehaviour:

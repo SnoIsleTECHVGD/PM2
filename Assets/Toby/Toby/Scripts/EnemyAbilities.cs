@@ -10,6 +10,7 @@ public class EnemyAbilities : MonoBehaviour
 
     public void Summon()
     {
+        //TO DO: Make it so it doesn't spawn in buildings
         GameObject enemy = summonableEnemies[Random.Range(0, summonableEnemies.Length)];
         Instantiate(enemy, this.transform.position + offset, this.transform.rotation);
     }

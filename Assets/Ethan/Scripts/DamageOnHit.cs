@@ -6,7 +6,7 @@ public class DamageOnHit : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (this.gameObject.CompareTag("Enemy") && collision.gameObject.CompareTag("Enemy"))
+        if ((this.gameObject.CompareTag("Enemy") || this.gameObject.CompareTag("Projectile")) && collision.gameObject.CompareTag("Enemy"))
         {
             return;
         }

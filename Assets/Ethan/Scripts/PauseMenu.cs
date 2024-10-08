@@ -12,7 +12,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject scrapCount;
     public GameObject otherCounts;
     public GameObject shop;
-    public GameObject minimap;
+    //public GameObject minimap;
     public KeyCode pause;
     static public List<GameObject> dialogueBoxes;
     // Update is called once per frame
@@ -38,7 +38,7 @@ public class PauseMenu : MonoBehaviour
         Timer.SetActive(false);
         scrapCount.SetActive(false);
         shop.SetActive(false);
-        minimap.SetActive(false);
+        //minimap.SetActive(false);
         otherCounts.SetActive(false);
         foreach (GameObject dia in dialogueBoxes)
         {
@@ -54,7 +54,7 @@ public class PauseMenu : MonoBehaviour
             pausePanel.SetActive(false);
             scrapCount.SetActive(true);
             otherCounts.SetActive(true);
-            minimap.SetActive(true);
+            //minimap.SetActive(true);
             if (FindObjectsOfType<DialogueManager>().Any(item => item.dialogueOpen == true))
             {
                 foreach (GameObject dialogue in dialogueBoxes)

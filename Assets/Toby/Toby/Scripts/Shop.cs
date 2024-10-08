@@ -24,6 +24,7 @@ public partial class Shop : MonoBehaviour
     public Upgrade bulletDelayUpgrade;
     public Upgrade landmine;
     public Upgrade shotgun;
+    public GameObject reject;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,10 +65,12 @@ public partial class Shop : MonoBehaviour
             if (scrapCount.scrapCount < healthUpgrade.cost)
             {
                 rejectionCost.Invoke();
+                reject.SetActive(true);
             }
             else if (healthUpgrade.upgradeTier >= healthUpgrade.maxUpgradeTier)
             {
                 rejectionTier.Invoke();
+                reject.SetActive(true);
             }
             return; 
         }
@@ -97,10 +100,12 @@ public partial class Shop : MonoBehaviour
             if (scrapCount.scrapCount < speedUpgrade.cost)
             {
                 rejectionCost.Invoke();
+                reject.SetActive(true);
             }
             else if (speedUpgrade.upgradeTier >= speedUpgrade.maxUpgradeTier)
             {
                 rejectionTier.Invoke();
+                reject.SetActive(true);
             }
             return;
         }
@@ -128,10 +133,12 @@ public partial class Shop : MonoBehaviour
             if (scrapCount.scrapCount < dashUpgrade.cost)
             {
                 rejectionCost.Invoke();
+                reject.SetActive(true);
             }
             else if (dashUpgrade.upgradeTier >= dashUpgrade.maxUpgradeTier)
             {
                 rejectionTier.Invoke();
+                reject.SetActive(true);
             }
             return;
         }
@@ -160,10 +167,12 @@ public partial class Shop : MonoBehaviour
             if (scrapCount.scrapCount < damageUpgrade.cost)
             {
                 rejectionCost.Invoke();
+                reject.SetActive(true);
             }
             else if (damageUpgrade.upgradeTier >= damageUpgrade.maxUpgradeTier)
             {
                 rejectionTier.Invoke();
+                reject.SetActive(true);
             }
             return;
         }
@@ -191,14 +200,17 @@ public partial class Shop : MonoBehaviour
             if (scrapCount.scrapCount < bulletDelayUpgrade.cost)
             {
                 rejectionCost.Invoke();
+                reject.SetActive(true);
             }
             else if (bulletDelayUpgrade.upgradeTier >= bulletDelayUpgrade.maxUpgradeTier)
             {
                 rejectionTier.Invoke();
+                reject.SetActive(true);
             }
             else if (playerGunStats.shotgunActive == true)
             {
                 rejectionShotgun.Invoke();
+                reject.SetActive(true);
             }    
             return;
         }
@@ -224,6 +236,7 @@ public partial class Shop : MonoBehaviour
         if (scrapCount.scrapCount < landmine.cost)
         {
             rejectionCost.Invoke();
+            reject.SetActive(true);
             return;
         }
         else if (scrapCount.scrapCount >= landmine.cost)
@@ -248,10 +261,12 @@ public partial class Shop : MonoBehaviour
             if (scrapCount.scrapCount < shotgun.cost)
             {
                 rejectionCost.Invoke();
+                reject.SetActive(true);
             }
             else if (shotgun.upgradeTier >= shotgun.maxUpgradeTier)
             {
                 rejectionTier.Invoke();
+                reject.SetActive(true);
             }
             return;
         }

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 7168994849114608636}
   m_Layer: 3
   m_Name: Enemy Bullet
-  m_TagString: Enemy
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  attack: 2
+  attack: 5
   scraps: {fileID: 0}
   maxScraps: 0
   minScraps: 0

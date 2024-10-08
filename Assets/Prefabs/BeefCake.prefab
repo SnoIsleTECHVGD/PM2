@@ -259,6 +259,7 @@ GameObject:
   - component: {fileID: 7058903847516429206}
   - component: {fileID: 3847207092291693410}
   - component: {fileID: 5701933672484723815}
+  - component: {fileID: 8881142863650586075}
   m_Layer: 0
   m_Name: BeefCake
   m_TagString: Enemy
@@ -275,7 +276,7 @@ Transform:
   m_GameObject: {fileID: 6160871783527236733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.4292, y: -1.54, z: 0}
-  m_LocalScale: {x: 15, y: 8, z: 1}
+  m_LocalScale: {x: 10, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7104150591430707140}
@@ -347,7 +348,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 20
+  m_Mass: 10
   m_LinearDrag: 1.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -369,7 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 250
-  attack: 100
+  attack: 2
   scraps: {fileID: 0}
   maxScraps: 0
   minScraps: 0
@@ -378,6 +379,8 @@ MonoBehaviour:
   player: {fileID: 0}
   playerStats: {fileID: 0}
   splodin: {fileID: 8567638350105959537, guid: 92d120a07bea25543be4b7c214ad67b5, type: 3}
+  isBeef: 0
+  cam: {fileID: 0}
 --- !u!114 &6486570606318593208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,7 +583,7 @@ MonoBehaviour:
         m_Calls: []
     scrapMax: 1000
     scrapMin: 1000
-    speed: 800
+    speed: 1500
     maxSpeed: 0
   abilityCountdown: 0
   abilityCountdownMax: 0
@@ -1046,6 +1049,19 @@ MonoBehaviour:
   - {x: -0.008697033, y: 0.06983876, z: 0}
   - {x: -0.016624928, y: 0.068330646, z: 0}
   - {x: -0.023269176, y: 0.06020999, z: 0}
+--- !u!114 &8881142863650586075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6160871783527236733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e243eb44c275b46aa71ed6d6a357ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 0}
 --- !u!1 &8872675433625504642
 GameObject:
   m_ObjectHideFlags: 0

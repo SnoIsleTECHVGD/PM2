@@ -52,4 +52,13 @@ public class deleteFridge : MonoBehaviour
             canInteract = false;
         }
     }
+    public void CloseShop()
+    {
+        Time.timeScale = 1;
+        isShopOpen = false;
+        waves.enabled = true;
+        shop.gameObject.SetActive(false);
+        Timer.gameObject.SetActive(true);
+        scrapCount.gameObject.SetActive(true);
+    }
 }
