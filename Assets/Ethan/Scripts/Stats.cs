@@ -48,6 +48,7 @@ public class Stats : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Player"))
         {
+            StopAllCoroutines();
             StartCoroutine(Camera.main.GetComponent<cameraShake>().ChangeVignette());
             StartCoroutine(Camera.main.GetComponent<cameraShake>().Shake(.20f, 1f));
         }

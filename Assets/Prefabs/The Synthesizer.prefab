@@ -140,6 +140,7 @@ MonoBehaviour:
   player: {fileID: 0}
   playerStats: {fileID: 0}
   splodin: {fileID: 8567638350105959537, guid: 92d120a07bea25543be4b7c214ad67b5, type: 3}
+  isBeef: 0
 --- !u!114 &6486570606318593208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +201,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6160871783527236733}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 701d7c7fa5996de4883bb3ad83b8145d, type: 3}

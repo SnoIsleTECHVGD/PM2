@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 3847207092291693410}
   - component: {fileID: 5701933672484723815}
   - component: {fileID: 8881142863650586075}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BeefCake
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -348,7 +348,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 20
   m_LinearDrag: 1.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -379,8 +379,7 @@ MonoBehaviour:
   player: {fileID: 0}
   playerStats: {fileID: 0}
   splodin: {fileID: 8567638350105959537, guid: 92d120a07bea25543be4b7c214ad67b5, type: 3}
-  isBeef: 0
-  cam: {fileID: 0}
+  isBeef: 1
 --- !u!114 &6486570606318593208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,7 +440,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6160871783527236733}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 701d7c7fa5996de4883bb3ad83b8145d, type: 3}
@@ -1061,7 +1060,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e243eb44c275b46aa71ed6d6a357ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCam: {fileID: 0}
 --- !u!1 &8872675433625504642
 GameObject:
   m_ObjectHideFlags: 0

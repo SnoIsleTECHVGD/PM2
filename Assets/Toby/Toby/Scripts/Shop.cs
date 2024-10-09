@@ -17,6 +17,7 @@ public partial class Shop : MonoBehaviour
     public UnityEvent rejectionCost;
     public UnityEvent rejectionTier;
     public UnityEvent rejectionShotgun;
+    public UnityEvent rejectionHealth;
     public Upgrade healthUpgrade;
     public Upgrade speedUpgrade;
     public Upgrade dashUpgrade;
@@ -60,7 +61,7 @@ public partial class Shop : MonoBehaviour
 
     public void IncreaseHealth()
     {
-        if (scrapCount.scrapCount < healthUpgrade.cost || healthUpgrade.upgradeTier >= healthUpgrade.maxUpgradeTier)
+        if (scrapCount.scrapCount < healthUpgrade.cost || healthUpgrade.upgradeTier >= healthUpgrade.maxUpgradeTier || playerStats.health == 50)
         {
             if (scrapCount.scrapCount < healthUpgrade.cost)
             {
@@ -72,6 +73,11 @@ public partial class Shop : MonoBehaviour
                 rejectionTier.Invoke();
                 reject.SetActive(true);
             }
+            else if (playerStats.health == 50)
+            {
+                rejectionHealth.Invoke();
+                reject.SetActive(true);
+            }
             return; 
         }
         else if (scrapCount.scrapCount >= healthUpgrade.cost)
@@ -81,6 +87,10 @@ public partial class Shop : MonoBehaviour
             float minScraps = 0;
             scrapCount.IncrementScrapCount(maxScraps, minScraps);
             playerStats.health += (int)healthUpgrade.upgradeIncrease;
+            if (playerStats.health > 50)
+            {
+                playerStats.health = 50;
+            }
             healthUpgrade.upgradeTier++;
             healthUpgrade.cost += healthUpgrade.costIncrease;
             statsDisplay.IncrementStats();

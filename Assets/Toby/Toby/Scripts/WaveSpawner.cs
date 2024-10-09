@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public partial class WaveSpawner : MonoBehaviour
 {
@@ -69,7 +70,7 @@ public partial class WaveSpawner : MonoBehaviour
         enemiesToSpawn.Clear();
         if (currentWave + 1 > waves.Length - 1)
         {
-            currentWave = 0;
+            SceneManager.LoadScene("Win");
         }
         else
         {
