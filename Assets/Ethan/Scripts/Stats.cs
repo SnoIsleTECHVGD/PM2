@@ -62,7 +62,7 @@ public class Stats : MonoBehaviour
         {
             if (isBeef == true)
             {
-                Camera.main.orthographicSize = 4.5f;
+                Camera.main.orthographicSize = 4f;
             }
             scraps.IncrementScrapCount(maxScraps, minScraps);
             Instantiate(ammo, this.transform.position, this.transform.rotation);

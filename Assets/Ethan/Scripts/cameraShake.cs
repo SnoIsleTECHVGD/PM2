@@ -7,6 +7,7 @@ using UnityEngine.Rendering.Universal;
 public class cameraShake : MonoBehaviour
 {
     public Color damageColor;
+    public Color healColor;
     public IEnumerator Shake(float duration, float magnitude)
     {
         Vector2 originalPos = transform.localPosition;
@@ -34,7 +35,7 @@ public class cameraShake : MonoBehaviour
         {
             redTint.color.Override(damageColor);
             yield return new WaitForSeconds(0.2f);
-            redTint.color.Override(Color.grey);
+            redTint.color.Override(healColor);
         }
     }
 }
