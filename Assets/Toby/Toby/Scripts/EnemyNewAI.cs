@@ -56,10 +56,9 @@ public partial class EnemyNewAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        playerDistance = Vector2.Distance((Vector2)target.position, (Vector2)transform.position);
         if (isRanged == true)
         {
-            playerDistance = Vector2.Distance((Vector2)target.position, (Vector2)transform.position);
-
             if (playerDistance > slowdownDistance)
             {
                 thisEnemy.speed = thisEnemy.maxSpeed;
@@ -75,7 +74,7 @@ public partial class EnemyNewAI : MonoBehaviour
             else if (playerDistance <= slowdownDistance)
             {
                 abilityCountdown -= Time.deltaTime;
-                thisEnemy.speed = 0;
+                thisEnemy.speed = 300;
                 if (abilityCountdown <= 0)
                 {
                     projectile.Blast();

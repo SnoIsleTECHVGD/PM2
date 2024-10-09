@@ -23,6 +23,8 @@ public partial class WaveSpawner : MonoBehaviour
     public SpawnState state = SpawnState.Counting;
     
     private Queue<GameObject> enemiesToSpawn;
+    public static List<GameObject> enemies = new();
+    public GameObject arrow;
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +66,7 @@ public partial class WaveSpawner : MonoBehaviour
 
     void WaveCompleted()
     {
+        arrow.SetActive(false);
         state = SpawnState.Counting;
         waveCountdown = timeBetweenWaves;
         timer.RestartTimer();
@@ -90,6 +93,7 @@ public partial class WaveSpawner : MonoBehaviour
     
     IEnumerator SpawnWave (Wave thisWave)
     {
+        arrow.SetActive(true);
         state = SpawnState.Spawning;
         QueueEnemy(thisWave);
         for (int i = 0; i < thisWave.enemies.Length; i++)
@@ -113,7 +117,8 @@ public partial class WaveSpawner : MonoBehaviour
     void SpawnEnemy (GameObject enemy)
     {
         GameObject sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        Instantiate(enemy, sp.transform.position, sp.transform.rotation);
+        GameObject newEnemy = Instantiate(enemy, sp.transform.position, sp.transform.rotation);
+        enemies.Add(newEnemy);
     }
 
 }

@@ -67,6 +67,7 @@ public class Stats : MonoBehaviour
             }
             scraps.IncrementScrapCount(maxScraps, minScraps);
             Instantiate(ammo, this.transform.position, this.transform.rotation);
+            WaveSpawner.enemies.Remove(this.gameObject);
         }
         Instantiate(splodin, this.transform.position, this.transform.rotation);
         Destroy(gameObject);
