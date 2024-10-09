@@ -42,4 +42,11 @@ public class DevTools : MonoBehaviour
         }
 
     }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (this.gameObject.CompareTag("Duck") && collision.gameObject.CompareTag("Player"))
+        {
+            isDev = true;
+        }
+    }
 }
