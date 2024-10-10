@@ -15,6 +15,8 @@ public class topDownMovement : MonoBehaviour
 
     private float dashCounter;
     private float dashCoolCounter;
+    public speedometer speeeeed;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -63,23 +65,23 @@ public class topDownMovement : MonoBehaviour
         
         if (Input.GetKey(KeyCode.W))
         {
-            GetComponent<Animator>().SetInteger("WalkDirection", 1);
+            animator.SetInteger("WalkDirection", 1);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            GetComponent<Animator>().SetInteger("WalkDirection", 2);
+            animator.SetInteger("WalkDirection", 2);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            GetComponent<Animator>().SetInteger("WalkDirection", 3);
+            animator.SetInteger("WalkDirection", 3);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            GetComponent<Animator>().SetInteger("WalkDirection", 4);
+            animator.SetInteger("WalkDirection", 4);
         }
-        if (activeMoveSpeed == dashSpeed)
+        if (speeeeed.speed <= 0)
         {
-            
+            animator.SetInteger("WalkDirection", 0);
         }
         else
         {
