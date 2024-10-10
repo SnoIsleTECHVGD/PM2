@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     public bool hasPause;
     public bool hasDialogueEvents;
     public DialogueManager dialogueManager;
+    public static DialogueManager currentManager;
 
     public UnityEvent endDialogue;
     public UnityEvent dialogueEventShortcut;
@@ -44,6 +45,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialouge)
     {
+        currentManager = this;
         dialogueOpen = true;
         Time.timeScale = 0;
         conversation = new Queue<DialoguePiece>();
@@ -88,6 +90,12 @@ public class DialogueManager : MonoBehaviour
     {  
         Time.timeScale = 1;
         dialogueOpen = false;
+        currentManager = null;
         thisScript.endDialogue.Invoke();
+    }
+
+    public void XButton()
+    {
+        EndDialogue(currentManager);
     }
 }

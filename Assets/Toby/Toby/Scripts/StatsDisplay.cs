@@ -24,6 +24,6 @@ public class StatsDisplay : MonoBehaviour
     }
     public void IncrementStats()
     {
-        statsText.text = $"Health: {playerStats.health} \r\n\r\nSpeed: {playerMovement.moveSpeed}\r\n\r\nDash LVL: {dashLvl.dashUpgrade.upgradeTier}\r\n\r\nBullet Damage: {playerStats.attack}\r\n\r\nBullet Speed: {playerGunStats.bulletDelayTime}\r\n\r\nLandmines: {playerMines.mineCount}\r\n\r\nHasShotgun: {playerGunStats.hasShotgun}\r\n";
+        statsText.text = $"Health: {playerStats.health} \r\n\r\nSpeed: {playerMovement.moveSpeed}\r\n\r\nDash LVL: {dashLvl.dashUpgrade.upgradeTier}\r\n\r\nBullet Damage: {playerStats.attack}\r\n\r\nFirerate: {playerGunStats.bulletDelayTime}\r\n\r\nLandmines: {playerMines.mineCount}\r\n\r\nHasShotgun: {playerGunStats.hasShotgun}\r\n";
     }
 }

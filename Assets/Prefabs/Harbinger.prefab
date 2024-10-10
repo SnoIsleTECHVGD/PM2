@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6131527459124504098}
   - component: {fileID: 2632934106458186744}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Left Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +549,7 @@ GameObject:
   - component: {fileID: 7058903847516429206}
   - component: {fileID: 3847207092291693410}
   - component: {fileID: 5586625371849138641}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Harbinger
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1347,7 +1347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3315750307530118271}
   - component: {fileID: 1017747397247517141}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Right Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

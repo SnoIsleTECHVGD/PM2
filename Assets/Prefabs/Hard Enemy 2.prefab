@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3407181738084172763}
   - component: {fileID: 6068413238320988998}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Left Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8536641640900783068}
   - component: {fileID: 5938679531507372797}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Right Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,7 +459,7 @@ GameObject:
   - component: {fileID: 7058903847516429206}
   - component: {fileID: 3847207092291693410}
   - component: {fileID: 2919324910413611035}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Hard Enemy 2
   m_TagString: Enemy
   m_Icon: {fileID: 0}

@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 3847207092291693410}
   - component: {fileID: 4000950564200662753}
   - component: {fileID: 98674367785405088}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: The Synthesizer
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -871,7 +871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5114431770904317496}
   - component: {fileID: 5550328784643506095}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Right Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1100,7 +1100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7730766466848115109}
   - component: {fileID: 4262768861239645400}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Left Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7058733099760949476}
   - component: {fileID: 1114341182680609653}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Right Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -467,7 +467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5499895483230787791}
   - component: {fileID: 4965605193456883694}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Middle Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -890,7 +890,7 @@ GameObject:
   - component: {fileID: 3207003745193801784}
   - component: {fileID: 7058903847516429206}
   - component: {fileID: 3847207092291693410}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Basic Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1307,7 +1307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8669534786210159277}
   - component: {fileID: 7253982111536424878}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Left Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

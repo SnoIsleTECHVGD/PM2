@@ -29,6 +29,7 @@ public partial class WaveSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        enemies = new();
         if (spawnPoints.Length == 0)
         {
             Debug.LogError("ERROR: No spawn points!");
