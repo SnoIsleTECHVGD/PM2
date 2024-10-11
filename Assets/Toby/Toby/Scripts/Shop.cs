@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.Rendering;
 
 public partial class Shop : MonoBehaviour
 {
@@ -26,6 +28,7 @@ public partial class Shop : MonoBehaviour
     public Upgrade landmine;
     public Upgrade shotgun;
     public GameObject reject;
+    public Color healColor;
     // Start is called before the first frame update
     void Start()
     {
@@ -86,6 +89,10 @@ public partial class Shop : MonoBehaviour
             float maxScraps = 0;
             float minScraps = 0;
             scrapCount.IncrementScrapCount(maxScraps, minScraps);
+            if (GetComponent<Volume>().profile.TryGet(out Vignette redTint))
+            {
+                redTint.color.Override(healColor);
+            }
             playerStats.health += (int)healthUpgrade.upgradeIncrease;
             if (playerStats.health > 50)
             {

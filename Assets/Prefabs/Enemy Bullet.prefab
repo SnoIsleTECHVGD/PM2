@@ -103,9 +103,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  cameraShake: {fileID: 0}
   speed: 5
   rb: {fileID: 2574753923754025305}
+  playerStats: {fileID: 0}
+  player: {fileID: 0}
+  damageColor: {r: 0.6784314, g: 0.15686275, b: 0.15686275, a: 0}
+  healColor: {r: 0.18039216, g: 0.18039216, b: 0.18039216, a: 0}
 --- !u!50 &2574753923754025305
 Rigidbody2D:
   serializedVersion: 4
@@ -175,6 +178,7 @@ MonoBehaviour:
   player: {fileID: 0}
   playerStats: {fileID: 0}
   splodin: {fileID: 0}
+  isBeef: 0
 --- !u!114 &5869363394435148230
 MonoBehaviour:
   m_ObjectHideFlags: 0

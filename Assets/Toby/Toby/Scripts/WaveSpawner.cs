@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public partial class WaveSpawner : MonoBehaviour
 {
@@ -25,6 +26,11 @@ public partial class WaveSpawner : MonoBehaviour
     private Queue<GameObject> enemiesToSpawn;
     public static List<GameObject> enemies = new();
     public GameObject arrow;
+    public UnityEvent fridgeLightOff;
+    public UnityEvent fridgeLightOn;
+    public UnityEvent waveEventStart;
+    public UnityEvent waveEventEnd;
+    public bool hasEvent;
 
     // Start is called before the first frame update
     void Start()
@@ -67,6 +73,11 @@ public partial class WaveSpawner : MonoBehaviour
 
     void WaveCompleted()
     {
+        if (hasEvent == true)
+        {
+            waveEventEnd.Invoke();
+        }
+        fridgeLightOn.Invoke();
         arrow.SetActive(false);
         state = SpawnState.Counting;
         waveCountdown = timeBetweenWaves;
@@ -94,6 +105,11 @@ public partial class WaveSpawner : MonoBehaviour
     
     IEnumerator SpawnWave (Wave thisWave)
     {
+        if (hasEvent == true)
+        {
+            waveEventStart.Invoke();
+        }
+        fridgeLightOff.Invoke();
         arrow.SetActive(true);
         state = SpawnState.Spawning;
         QueueEnemy(thisWave);

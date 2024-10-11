@@ -8,7 +8,7 @@ public class cameraShake : MonoBehaviour
 {
     public Color damageColor;
     public Color healColor;
-    public IEnumerator Shake(float duration, float magnitude)
+    private IEnumerator Shake(float duration, float magnitude)
     {
         Vector2 originalPos = transform.localPosition;
 
@@ -29,7 +29,7 @@ public class cameraShake : MonoBehaviour
         transform.localPosition = originalPos;
 
     }
-    public IEnumerator ChangeVignette()
+    private IEnumerator ChangeVignette()
     {
         if (GetComponent<Volume>().profile.TryGet(out Vignette redTint))
         {
@@ -37,5 +37,12 @@ public class cameraShake : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
             redTint.color.Override(healColor);
         }
+    }
+
+    public void Numerate(float duration, float magnitude)
+    {
+        StopAllCoroutines();
+        StartCoroutine(ChangeVignette());
+        StartCoroutine(Shake(duration, magnitude));
     }
 }

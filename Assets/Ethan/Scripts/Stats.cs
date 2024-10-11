@@ -48,9 +48,7 @@ public class Stats : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Player"))
         {
-            StopAllCoroutines();
-            StartCoroutine(Camera.main.GetComponent<cameraShake>().ChangeVignette());
-            StartCoroutine(Camera.main.GetComponent<cameraShake>().Shake(.20f, 1f));
+            Camera.main.GetComponent<cameraShake>().Numerate(.2f, 1f);
         }
     }
     public void TakeDamage(int attack)
