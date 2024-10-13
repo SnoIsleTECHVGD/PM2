@@ -6,22 +6,42 @@ using UnityEngine.Rendering.Universal;
 public class LightFlicker : MonoBehaviour
 {
     public Light2D lampLight;
-    public float timeToFlicker;
+    public float lightFlickerCountdown;
+    public float countdownMax;
+    public float timeOff;
+    public Light2D[] lampLights;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(Flicker());
+        lightFlickerCountdown -= Time.deltaTime;
+        if (lightFlickerCountdown <= 0)
+        {
+            TurnLightOff();
+            Invoke("ResetTimer", timeOff);
+        }
+        else if (lightFlickerCountdown > 0)
+        {
+            TurnLightOn();
+        }
     }
-    private IEnumerator Flicker()
+
+    public void TurnLightOn()
+    {
+        lampLight.enabled = true;
+    }
+
+    public void TurnLightOff()
     {
         lampLight.enabled = false;
-        yield return new WaitForSeconds(timeToFlicker);
-        lampLight.enabled = true;
+    }
+
+    public void ResetTimer()
+    {
+        lightFlickerCountdown = countdownMax;
     }
 }

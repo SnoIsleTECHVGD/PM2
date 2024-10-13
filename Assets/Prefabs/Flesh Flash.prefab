@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827293535986567855}
   - component: {fileID: 945412315093797271}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Right Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 3847207092291693410}
   - component: {fileID: 6610506324684934150}
   - component: {fileID: 7406577611928570183}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Flesh Flash
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ MonoBehaviour:
   isBullet: 0
   player: {fileID: 0}
   playerStats: {fileID: 0}
-  splodin: {fileID: 0}
+  splodin: {fileID: 8567638350105959537, guid: 92d120a07bea25543be4b7c214ad67b5, type: 3}
   isBeef: 0
 --- !u!114 &6486570606318593208
 MonoBehaviour:
@@ -1137,7 +1137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4204351774039666605}
   - component: {fileID: 1200789425902946008}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Left Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

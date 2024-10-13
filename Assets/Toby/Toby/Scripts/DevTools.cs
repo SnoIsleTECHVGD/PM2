@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class DevTools : MonoBehaviour
 {
+    public KeyCode ammoIncrement;
     public KeyCode statIncrement;
     public KeyCode scrapsUp;
     public KeyCode waveUp;
     public KeyCode waveDown;
     public Stats stats;
+    public gun gun;
     public Scraps scraps;
     public WaveSpawner waves;
     public bool isDev;
@@ -25,11 +27,15 @@ public class DevTools : MonoBehaviour
         {
             if (Input.GetKeyDown(statIncrement))
             {
-                stats.health += 20;
+                stats.health += 200;
+            }
+            if (Input.GetKeyDown(ammoIncrement))
+            {
+                gun.Ammo += 200;
             }
             else if (Input.GetKeyDown(scrapsUp))
             {
-                scraps.scrapCount += 100;
+                scraps.scrapCount += 10000;
             }
             else if (Input.GetKeyDown(waveUp))
             {

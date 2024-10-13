@@ -28,9 +28,6 @@ public partial class WaveSpawner : MonoBehaviour
     public GameObject arrow;
     public UnityEvent fridgeLightOff;
     public UnityEvent fridgeLightOn;
-    public UnityEvent waveEventStart;
-    public UnityEvent waveEventEnd;
-    public bool hasEvent;
 
     // Start is called before the first frame update
     void Start()
@@ -73,9 +70,9 @@ public partial class WaveSpawner : MonoBehaviour
 
     void WaveCompleted()
     {
-        if (hasEvent == true)
+        if (CurrentWave.hasEvent == true)
         {
-            waveEventEnd.Invoke();
+            CurrentWave.waveEventEnd.Invoke();
         }
         fridgeLightOn.Invoke();
         arrow.SetActive(false);
@@ -105,9 +102,9 @@ public partial class WaveSpawner : MonoBehaviour
     
     IEnumerator SpawnWave (Wave thisWave)
     {
-        if (hasEvent == true)
+        if (CurrentWave.hasEvent == true)
         {
-            waveEventStart.Invoke();
+            CurrentWave.waveEventStart.Invoke();
         }
         fridgeLightOff.Invoke();
         arrow.SetActive(true);

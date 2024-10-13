@@ -89,10 +89,6 @@ public partial class Shop : MonoBehaviour
             float maxScraps = 0;
             float minScraps = 0;
             scrapCount.IncrementScrapCount(maxScraps, minScraps);
-            if (GetComponent<Volume>().profile.TryGet(out Vignette redTint))
-            {
-                redTint.color.Override(healColor);
-            }
             playerStats.health += (int)healthUpgrade.upgradeIncrease;
             if (playerStats.health > 50)
             {
@@ -104,6 +100,10 @@ public partial class Shop : MonoBehaviour
             foreach (IncrementCost c in costs)
             {
                 c.IncrementCosts();
+            }
+            if (GetComponent<Volume>().profile.TryGet(out Vignette redTint))
+            {
+                redTint.color.Override(healColor);
             }
         }
     }
@@ -293,8 +293,16 @@ public partial class Shop : MonoBehaviour
             float maxScraps = 0;
             float minScraps = 0;
             scrapCount.IncrementScrapCount(maxScraps, minScraps);
-            playerGunStats.hasShotgun = true;
-            bulletDelayUpgrade.upgradeTier++;
+            if (shotgun.upgradeTier == 0)
+            {
+                playerGunStats.hasShotgun = true;
+            }
+            else if (shotgun.upgradeTier > 0)
+            {
+                playerGunStats.shotgunDelayTime -= 0.1f;
+            }
+            shotgun.upgradeTier++;
+            shotgun.cost += shotgun.costIncrease;
             statsDisplay.IncrementStats();
             foreach (IncrementCost c in costs)
             {
