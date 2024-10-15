@@ -358,7 +358,7 @@ MonoBehaviour:
     speed: 500
     maxSpeed: 0
   abilityCountdown: 0
-  abilityCountdownMax: 50
+  abilityCountdownMax: 15
   isRanged: 0
   playerDistance: 0
   slowdownDistance: 0
