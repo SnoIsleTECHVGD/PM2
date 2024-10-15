@@ -570,27 +570,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Ethan Kellar
-
-    -Movement Script
-
-    -Camera Follow Script
-
-    -Pause
-    Menu Script
-
-    -Weapon related scripts
-
-    -Stats related scripts
-
-    -Win/Lose
-    conditions
-
-    -SFX
-
-    -UI implementation
-
-'
+  m_text: "Ethan Kellar\n-Movement Script\n-Camera Follow Script\n-Pause Menu Script\n-Weapon
+    related scripts\n-Stats related scripts\n-Win/Lose conditions\n-SFX\n-UI implementation\n\n\n\n\n\nAlso,
+    thanks to \nSavfk for the\nmusic!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f626bb15c6726b04ebe4f778d4ffc1ad, type: 2}
   m_sharedMaterial: {fileID: -5436454048925689786, guid: f626bb15c6726b04ebe4f778d4ffc1ad, type: 2}
